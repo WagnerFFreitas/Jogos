@@ -1,0 +1,350 @@
+body { 
+  background-image: url('fundo.png'); /* imagem de jogos antigos */
+  background-size: cover;
+  background-position: fixed;
+  font-family: Arial, sans-serif;
+} 
+
+/* O bloco abaixo cria as partes do enforcado */
+#pessoa-enforcada {
+  display: flex; /* Define um contêiner flexível, permitindo o uso de propriedades de layout flexbox */
+  flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+  align-items: center; /* Centraliza os itens flexíveis horizontalmente no contêiner */
+  margin-top: 20px; /* Adiciona um espaçamento em pixel acima do elemento */
+  font-size: 24px; /* Define o tamanho da fonte do texto */
+  color: #333; /* Define a cor do texto */
+}
+
+/* O bloco abaixo insere a cor preta no corpo do enforcado */
+.cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda {
+  margin: 5px; /* Adiciona um espaçamento ao redor de cada parte do corpo */
+  background-color: #333; /* Define a cor de fundo das partes do corpo */
+}
+
+/* O bloco abaixo adiciona o tamanho da cabeça */
+#pessoa-enforcada .cabeca {
+  position: relative; /* Define a posição da cabeça, posicionando-o de acordo com o fluxo da página */
+  width: 40px; /* Define o tamanho da altura da cabeça */
+  height: 40px; /* Define o tamanho da largura da cabeça */
+  border-radius: 50%; /* Define a formas arredondadas da cabeça */
+}
+
+/* O bloco abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+  position: relative; /* Define a posição dos olhos, posicionando-os de acordo com o fluxo da página */
+  width: 5px; /*Define o tamanho da largura dos olhos */
+  height: 5px; /* Define o tamanho da alturas olhos */
+  background-color: white; /* Define a cor de fundo dos olhos */
+  border-radius: 50%; /* Define a forma arrendondada dos olhos */
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+  top: -31.5px; /* Define a posição do olho esquerdo em relação ao topo da página */
+  left: 8px; /* Define a posição do olho esquerdo à esquerda */
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+  top: -36.5px; /* Define a posição do olho direito em relação ao topo da página */
+  right: 8px; /* Define a posição do olho direito à direita */
+}
+
+#pessoa-enforcada .nariz {
+  position: relative; /* Define a posição do nariz, posicionando-o de acordo com o fluxo da página */
+  top: -40px; /* Define a posição do nariz em relação ao topo da página */
+  left: -10x; /* Define a posição do nariz à esquerda */
+  width: 5px; /* Define o tamanho da largura do nariz */
+  height: 10px; /* Define o tamanho da altura do nariz */
+  background-color: white; /* Define a cor de fundo do nariz */
+  border-radius: 10px; /* Define a formas arredondadas nas bordas do nariz */
+}
+
+#pessoa-enforcada .boca {
+  position: relative; /* Define a posição da boca, posicionando-o de acordo com o fluxo da página */
+  top: -71px; /* Define a posição em relação ao topo da página */
+  left: 0px;  /* Define a posição da boca à esquerda */
+  width: 20px; /* Define o tamanho da largura da boca */
+  height: 5px; /*Define o tamanho da altura da boca */
+  background-color: white; /* Define a cor de fundo da boca */
+  border-radius: 0 0 50px 50px; /* Define a formas arredondadas nas bordas da boca na parte inferior */
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+  position: relative; /* Define a posição das orelhas, posicionando-o de acordo com o fluxo da página */
+  width: 7px; /* Define o tamanho da largura das orelhas */
+  height: 13px; /* Define o tamanho da altura das orelhas */
+  background-color: #333; /* Define a cor de fundo das orelhas */
+  border-radius: 50%; /* Define a forma arredondada dos olhos */
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+  top: -51.5px; /* Define a posição da orelha esquerda em relação ao topo da página */
+  left: 20px; /* Define a posição da orelha esquerda à esquerda */
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+  top: -65px; /* Define a posição da orelha direita em relação ao topo da página */
+  right: 20px; /* Define a posição da orelha direita à direita */
+}
+
+*#pessoa-enforcada .cabelo {
+  position: relative; /* Define a posição do cabelo, posicionando-o de acordo com o fluxo da página */
+  top: -91px; /* Define a posição do cabelo em relação ao topo da página */
+  left: 0px; /* Define a posição do cabelo à esquerda */
+  width: 34.5px; /* Define o tamanho da largura do cabelo */
+  height: 8px; /* Define o tamanho da altura do cabelo */
+  background-color: #333; /* Define a cor de fundo do cabelo */
+  border-radius: 50px 50px 0 0px; /* Adiciona bordas arredondadas à parte superior do cabelo */
+}
+
+/* O bloco abaixo adiciona o tamanho do tronco */
+#pessoa-enforcada .tronco {
+  position: relative; /* Define a posição do tronco, posicionando-o de acordo com o fluxo da página */
+  top: -70px; /* Define a posição do tronco em relação ao topo da página */
+  width: 30px; /*Define o tamanho da largura do tronco */
+  height: 60px; /* Define o tamanho da altura tronco */
+  border-radius: 20px; /* Adiciona bordas arredondadas ao tronco */
+}
+
+
+/* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */
+#pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito {
+  position: relative; /* Define a posição dos braços, posicionando-o de acordo com o fluxo da página */
+  width: 15px; /*Define o tamanho da largura dos braços */
+  height: 40px; /* Define o tamanho da alturas dos braços */
+  border-radius: 10px; /* Arredonda as extremidades dos braços */
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço direito à direita do tronco */
+#pessoa-enforcada .braco-esquerdo {
+  top: -135px; /* Define a posição do braço esquerdo em relação ao topo da página */
+  right: -25px; /* Define a posição do braço esquerdo à direita */
+}
+
+/* Os blocos abaixo adiciona os dedos da mao esquerda */
+#pessoa-enforcada .mao-esquerda-dedo1 {
+  position: relative; /* Define a posição do dedo 1 esquerdo, posicionando-o de acordo com o fluxo da página */
+  top: -149px; /* Define a posição do dedo 1 esquerdo em relação ao topo da página */
+  right: -15.5px; /* Define a posição do dedo 1 esquerdo à direita */
+  width: 3px; /* Define o tamanho da largura do dedo 1 esquerdo */
+  height: 12px; /* Define o tamanho da altura dedo 1 esquerdo */
+  background-color: #333; /* Define a cor de fundo do dedo 1 esquerdo */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 1 esquerdo */
+  transform: rotate(20deg); /* Define a inclinação do dedo 1 esquerdo (Rotação) */
+  transform-origin: bottom right; /* Define o ponto de rotação do dedo 1 esquerdo */
+}
+
+#pessoa-enforcada .mao-esquerda-dedo2 {
+  position: relative; /* Define a posição do dedo 2 esquerdo, posicionando-o de acordo com o fluxo da página */
+  top: -160px; /* Define a posição do dedo 2 esquerdo em relação ao topo da página */
+  right: -21px; /* Define a posição do dedo 2 esquerdo à direita */
+  width: 2.5px; /* Define o tamanho da largura do dedo 2 esquerdo */
+  height: 15px; /* Define o tamanho da altura dedo 2 esquerdo */
+  background-color: #333; /* Define a cor de fundo do dedo 2 esquerdo */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 2 esquerdo */
+}
+
+#pessoa-enforcada .mao-esquerda-dedo3 {
+  position: relative; /* Define a posição do dedo 3 esquerdo, posicionando-o de acordo com o fluxo da página */
+  top: -172px; /* Define a posição do dedo 3 em relação ao topo da página */
+  right: -24.5px; /* Define a posição do dedo 3 esquerdo à direita */
+  width: 2.5px; /*Define o tamanho da largura do dedo 3 esquerdo */
+  height: 14px; /* Define o tamanho da altura dedo 3 esquerdo */
+  background-color: #333; /* Define a cor de fundo do dedo 3 esquerdo */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 3 esquerdo */
+}
+
+#pessoa-enforcada .mao-esquerda-dedo4 {
+  position: relative; /* Define a posição do dedo 4 esquerdo, posicionando-o de acordo com o fluxo da página */
+  top: -184px; /* Define a posição do dedo 4 esquerdo em relação ao topo da página */
+  right: -28px; /* Define a posição do dedo 4 esquerdo à direita */
+  width: 2.5px; /* Define o tamanho da largura do dedo 4 esquerdo */
+  height: 11px; /* Define o tamanho da altura dedo 4 esquerdo */
+  background-color: #333; /* Define a cor de fundo do dedo 4 esquerdo */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 4 esquerdo */
+}
+
+#pessoa-enforcada .mao-esquerda-dedo5 {
+  position: relative; /* Define a posição do dedo 5 esquerdo, posicionando-o de acordo com o fluxo da página */
+  top: -199px; /* Define a posição do dedo 5 esquerdo em relação ao topo da página */
+  right: -31.4px; /* Define a posição do dedo 5 esquerdo à direita */
+  width: 2.3px; /* Define o tamanho da largura do dedo 5 esquerdo */
+  height: 12px; /* Define o tamanho da altura dedo 5 esquerdo */
+  background-color: #333; /* Define a cor de fundo do dedo 5 esquerdo */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 5 esquerdo */
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço esquerdo à esquerda do tronco */
+#pessoa-enforcada .braco-direito {
+  top: -249px; /* Define a posição do braço direito em relação ao topo da página */
+  left: -25px; /* Define a posição do braço à direita */
+}
+
+/* Os blocos abaixo adiciona os dedos da mao direita */
+#pessoa-enforcada .braco-direito-dedo1 {
+  position: relative; /* Define a posição do dedo 1 direito, posicionando-o de acordo com o fluxo da página */
+  top: -263.5px; /* Define a posição do dedo 1 direito em relação ao topo da página */
+  left: -15.5px; /* Define a posição do dedo 1 direito à esquerda */
+  transform: rotate(-23.5deg); /* Define a inclinação do dedo 1 direito (Rotação) */
+  transform-origin: bottom right; /* Define o ponto de rotação do dedo 1 direito */
+  width: 3px; /*Define o tamanho da largura do dedo 1 direito */
+  height: 12px; /* Define o tamanho da altura dedo 1 direito */
+  background-color: #333; /* Define a cor de fundo do dedo 1 direito */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 1 direito */
+}
+
+#pessoa-enforcada .braco-direito-dedo2 {
+  position: relative; /* Define a posição do dedo 2 direito, posicionando-o de acordo com o fluxo da página */
+  top: -274px; /* Define a posição do dedo 2 direito em relação no topo da página */
+  left: -20.8px; /* Define a posição do dedo 2 direito à esquerda */
+  width: 2.5px; /*Define o tamanho da largura do dedo 2 direito */
+  height: 15px; /* Define o tamanho da altura dedo 2 direito */
+  background-color: #333; /* Define a cor de fundo do dedo 2 direito */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 2 direito */
+}
+
+#pessoa-enforcada .braco-direito-dedo3 {
+  position: relative; /* Define a posição do dedo 3 direito, posicionando-o de acordo com o fluxo da página */
+  top: -286.1px; /* Define a posição do dedos 3 direito em relação ao topo da página */
+  left: -24.3px; /* Define a posição do dedo 3 direito à esquerda */
+  width: 2.5px; /*Define o tamanho da largura do dedo 3 direito */
+  height: 14px; /* Define o tamanho da altura dedo 3 direito */
+  background-color: #333; /* Define a cor de fundo do dedo 3 direito */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 3 direito */
+}
+
+#pessoa-enforcada .braco-direito-dedo4 {
+  position: relative; /* Define a posição do dedo 4 direito, posicionando-o de acordo com o fluxo da página */
+  top: -298px; /* Define a posição do dedo 4 direito em relação ao topo da página */
+  left: -28px; /* Define a posição do dedo 4 direito à esquerda */
+  width: 2.5px; /*Define o tamanho da largura do dedo 4 direito */
+  height: 11px; /* Define o tamanho da altura dedo 4 direito */
+  background-color: #333; /* Define a cor de fundo do dedo 4 direito */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 4 direito */
+}
+
+#pessoa-enforcada .braco-direito-dedo5 {
+  position: relative; /* Define a posição do dedo 5 direito, posicionando-o de acordo com o fluxo da página */
+  top: -313px; /* Define a posição do dedo 5 direito em relação ao topo da página */
+  left: -31.4px; /* Define a posição do dedo 5 à esquerda */
+  width: 2.3px; /* Define o tamanho da largura do dedo 5 direito */
+  height: 12px; /* Define o tamanho da altura do dedo 5 direito */
+  background-color: #333; /* Define a cor de fundo do dedo 5 direito */
+  border-radius: 10px; /* Arredonda as extremidades do dedo 5 direito */
+}
+
+/* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */
+#pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita {
+  position: relative; /* Define a posição das pernas, posicionando-as de acordo com o fluxo da página */
+  width: 15px; /* Define o tamanho da largura das pernas */
+  height: 50px; /* Define o tamanho da altura das pernas */
+  border-radius: 10px; /* Arredonda as extremidades das pernas */
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna direita embaixo do tronco */
+#pessoa-enforcada .perna-esquerda {
+  top: -311px; /* Define a posição da perna esquerda em relação ao topo da página */
+  left: 10px; /* Define a posição da perna esquerda à esquerda*/
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-esrquerdo {
+  position: relative; /* Define a posição do sapato esquerdo, posicionando-o de acordo com o fluxo da página */
+  top: -317px; /* Define a posição do sapato esquerdo em relação ao topo da página */
+  right: -10px; /* Define a posição do sapato esquerdo à direita */
+  width: 16px; /* Define o tamanho da largura do sapato esquerdo */
+  height: 8px; /* Define o tamanho da altura do sapato esquerdo */
+  background-color: #333; /* Define a cor de fundo do sapato esquerdo */
+  border-radius: 10px; /* Arredonda as extremidades do sapato direito */
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna esquerda embaixo do tronco */
+#pessoa-enforcada .perna-direita {
+  top: -379px; /* Define a posição em relação ao topo da página */
+  left: -10px; /* Define a posição da perna direita à esquerda*/
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-direito {
+  position: relative; /* Define a posição do sapato direito, posicionando-o de acordo com o fluxo da página */
+  top: -385px; /* Define a posição do sapato direito em relação ao topo da página */
+  left: -10px; /* Define a posição do sapato direito à esquerda */
+  width: 16px; /* Define o tamanho da largura do sapato direito */
+  height: 8px; /* Define o tamanho da altura do sapato direito */
+  background-color: #333; /* Define a cor de fundo do sapato direito */
+  border-radius: 10px;  /* Arredonda as extremidades do sapato direito */
+}
+
+/* ## Os blocos abaixo usam parte do arquivo forca.CSS do Meu_Primeiro_Jogo a qual foi criado ## */
+
+/* O bloco abaixo define a fonte e seu estilo junto com a posição */
+body {
+  margin: 20px; /* Define a margem em torno do elemento body */
+  font-family: Arial, sans-serif; /* Define a família da fonte principal e uma alternativa genérica */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* O bloco abaixo define a cor do título do jogo */
+h1 {
+  color: #333; /* Define a cor do texto do título */
+}
+
+/*O bloco abaixo ajusta a posição dos textos*/
+#estado-jogo, #tentativas-restantes, #letras-incorretas {
+  position: absolute; /* Posiciona os textos de forma independente */
+  left: 50%; /* Centralizar o texto na horizontalmente */
+  transform: translateX(-50%); /* Ajusta a largura do próprio texto */
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#estado-jogo {
+  top: 360px; /* Define a posição do texto em relação ao topo da página */
+  margin-bottom: 5px; /* Define a margem inferior */
+  font-size: 24px; /* Define o tamanho da fonte do texto */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#tentativas-restantes {
+  top: 400px; /* Define a posição do texto em relação ao topo da página */
+  margin-bottom: 5px; /* Define a margem inferior */ 
+  font-size: 18px; /* Define o tamanho da fonte do texto */
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#letras-incorretas {
+  top: 430px;/* Posiciona os textos de forma independente */
+  margin-bottom: 5px; /* Define a margem inferior */
+  font-size: 18px; /* Define o tamanho da fonte do texto */
+  color: red; /* Define a cor das letras incorretas */
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#entrada-letra {
+  position: absolute; /* Posiciona os textos de forma independente */
+  top: 450px; /* Define a posição do texto em relação ao topo da página */
+  left: 46%; /* Centralizar o texto na horizontalmente */
+  transform: translateX(-50%); /* Ajusta a largura do próprio texto */
+  min-width: 5px; /* Define o tamanho da largura mínima da caixa de input */
+  max-width: 12px; /* Define o tamanho da largura máxima da caixa de input */ 
+  margin-top: 10px; /* Define a distância superior do conteúdo do texto */
+  padding: 5px; /* Define o preenchimento em torno do conteúdo do texto */
+  font-size: 16px; /* Define o tamanho da fonte do texto */
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#verificar-letra {
+  position: absolute; /* Posiciona os textos de forma independente */
+  top: 450px; /* Define a posição do texto em relação ao topo da página */
+  left: 55%; /* Centralizar o texto na horizontalmente */
+  transform: translateX(-50%); /* Ajustar a largura do próprio texto */
+  margin-top: 10px; /* Define a distância superior do conteúdo do texto */ 
+  padding: 5px 10px; padding: 5px 10px; /* Define o preenchimento no topo e na parte inferior das laterais */
+  font-size: 16px; /* Define o tamanho da fonte do texto */
+  cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o Texto */
+}
+
+/* O bloco abaixo define a cor de fundo do botão e quando o botão e pressionado */
+#verificar-letra:active {
+  color: white; /* Define a cor botão verificar*/
+  background-color: blue; /* Define a cor do botão ao clicar nele */
+}

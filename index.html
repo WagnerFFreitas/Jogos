@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define as configurações de viewport para responsividade -->
-    <title>Jogo da Forca</title> <!-- Define o título da página -->
-    <link rel="stylesheet" href="forca.css"> <!-- Link para o arquivo CSS que estiliza a página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <h1>Jogo da Forca</h1> <!-- Título principal da página -->
-    <div id="pessoa-enforcada"></div> <!-- Div para exibir as partes do enforcado -->
-    <div id="estado-jogo"></div> <!-- Div para exibir o estado atual do jogo -->
-    <div id="tentativas-restantes"></div> <!-- Div para exibir o número de tentativas restantes -->
-    <div id="letras-incorretas"></div> <!-- Div para exibir as letras incorretas já digitadas -->
-    <input type="text" id="entrada-letra" placeholder="Digite uma letra"> <!-- Campo de entrada de texto para digitar as letras -->
-    <button id="verificar-letra" onclick="verificarletra()">Verificar letra</button> <!-- Botão para verificar a letra digitada -->
-    <div id="mensagem"></div> <!-- Div para exibir mensagens adicionais -->
-    <script src="forca.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica do jogo -->
+    <div class="container">
+        <button class="button" id="init-button">Jogo da forca contendo palavras de alimentos em geral</button>
+        <button class="button" id="mid-button">JOGO COM NIVEL MÉDIO</button>
+        <button class="button" id="adv-button">JOGO COM NÍVEL AVANÇADO</button>
+    </div>
+    
+    <script src="menu.js"></script>
 </body>
 </html>

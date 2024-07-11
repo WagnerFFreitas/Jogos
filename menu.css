@@ -1,0 +1,43 @@
+body { 
+    background-image: url('fundo.jpeg'); /* imagem de jogos antigos */
+    background-size: cover;
+    background-position: fixed;
+    font-family: Arial, sans-serif;
+} 
+container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+} 
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#init-button {
+    background-color: #ff69b4;
+}
+
+#mid-button {
+    background-color: #ffff00;
+}
+
+#adv-button {
+    background-color: #008000;
+}
+
+button.clicked {
+    background-color: #666;
+}
+
