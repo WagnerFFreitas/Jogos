@@ -1,43 +1,79 @@
-body { 
-    background-image: url('fundo.jpeg'); /* imagem de jogos antigos */
-    background-size: cover;
-    background-position: fixed;
-    font-family: Arial, sans-serif;
-} 
-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-} 
-
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
+body {
+  background-image: url('fundo.jpeg'); /* Imagem de jogos antigos */
+  background-size: cover;
+  background-position: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-button:hover {
-    background-color: #3e8e41;
+.container {
+  display: flex;
+  flex-direction: row; /* Mudar para row */
+  align-items: center;
+  padding: 20px;
+  justify-content: center; /* Adicionar justify-content para centralizar os botões */
+}
+
+.button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 10px 5px; /* Mudar para margin: 10px 5px; para adicionar espaço entre os botões */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adicionar transition para o efeito de lift */
+  transform: perspective(1000px) translateZ(0) rotateY(0); /* Adicionar perspective e translateZ para criar o efeito de profundidade */
+}
+
+.button:hover {
+  transform: perspective(1000px) translateZ(20px) rotateY(10deg); /* Adicionar translateZ para criar o efeito de profundidade e rotateY para rotacionar o botão */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adicionar sombra para criar o efeito de lift */
+}
+
+.button .button-image {
+  max-width: 100px; /* Definir o tamanho máximo da imagem */
+  display: block;
+  margin: 0 auto 10px; /* Adicionar margem na parte inferior da imagem */
+}
+
+.button .button-text {
+  font-size: 14px;
+}
+
+.button.inicial {
+  background-color: #fff;
+  color: #333;
+  cursor: default;
+}
+
+.button.inicial:hover {
+  background-color: #fff;
+}
+
+.button.inicial > span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.button.clicked {
+  background-color: #666;
 }
 
 #init-button {
-    background-color: #ff69b4;
+  background-color: #ff69b4;
+  position: relative; /* Adicionar posição relativa para alinhar a imagem e o texto */
 }
 
 #mid-button {
-    background-color: #ffff00;
+  background-color: #ffff00;
 }
 
 #adv-button {
-    background-color: #008000;
+  background-color: #008000;
 }
-
-button.clicked {
-    background-color: #666;
-}
-
+/* y */
