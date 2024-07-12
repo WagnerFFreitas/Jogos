@@ -20,7 +20,7 @@ function verificarletra() {
   var inputElement = document.getElementById('entrada-letra');
   var letra = inputElement.value.toLowerCase(); // Captura a letra digitada e converte para minúscula
   // O bloco abaixo verifica se a letra é válida (apenas letras de a-z e acentuadas)
-  if (!letra.match(/^[a-zà-ú]$/)) { 
+  if (!letra.match(/^[a-zA-Zà-ú]$/)) { 
     alert("Por favor, insira uma letra válida.");
     return;
   }
