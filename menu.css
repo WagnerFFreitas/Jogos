@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+h1 {
+    font-size: 72px; /* Altera o tamanho da fonte para 32 pixels */
+    color: #09e95f; /* Define a cor do texto do título */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-style: italic; /* Deixa o texto em itálico */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    text-align: center; /* Centraliza o texto */
+    animation: rotateY 10s infinite linear; /* Adiciona a animação de rotação no eixo Y */
+}
+
+/* Define a animação de rotação no eixo Y */
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 body {
     background-image: url('fundo.jpeg');
     background-size: cover;
@@ -38,11 +60,17 @@ body {
 .button .button-image {
     max-width: 100px;
     display: block;
+
     margin: 0 auto 10px;
 }
 
 .button .button-text {
-    font-size: 14px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900; /* Peso da fonte mais grosso */
+    font-family: 'Cherry Bomb One', sans-serif; /* Fonte Cherry Bomb One */
+    color: #b7b7ca; /* Cor azul-marinho */
+    text-shadow: 1px 1px 1px #0a0a0a; /* Sombra branca */
 }
 
 .button.inicial {
@@ -65,16 +93,28 @@ body {
 }
 
 #init-button {
-    background-color: #ff69b4;
+    background-color: #008000;
     position: relative;
 }
 
 #mid-button {
     background-color: #ffff00;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900; /* Peso da fonte mais grosso */
+    font-family: 'Cherry Bomb One', sans-serif; /* Fonte Cherry Bomb One */
+    color: #b7b7ca; /* Cor azul-marinho */
+    text-shadow: 1px 1px 1px #0a0a0a; /* Sombra branca */
 }
 
 #adv-button {
     background-color: #008000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900; /* Peso da fonte mais grosso */
+    font-family: 'Cherry Bomb One', sans-serif; /* Fonte Cherry Bomb One */
+    color: #b7b7ca; /* Cor azul-marinho */
+    text-shadow: 1px 1px 1px #0a0a0a; /* Sombra branca */
 }
 
 /* Neon Button Styles */

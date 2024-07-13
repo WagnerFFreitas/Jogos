@@ -6,7 +6,3 @@ buttons.forEach(button => {
         window.open('Alimentos/forca.html', '_self');
     });
 });
-
-
-
-
