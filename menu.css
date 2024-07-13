@@ -1,79 +1,105 @@
 body {
-  background-image: url('fundo.jpeg'); /* Imagem de jogos antigos */
-  background-size: cover;
-  background-position: fixed;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    background-image: url('fundo.jpeg');
+    background-size: cover;
+    background-position: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  display: flex;
-  flex-direction: row; /* Mudar para row */
-  align-items: center;
-  padding: 20px;
-  justify-content: center; /* Adicionar justify-content para centralizar os botões */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
 }
 
 .button {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  margin: 10px 5px; /* Mudar para margin: 10px 5px; para adicionar espaço entre os botões */
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s; /* Adicionar transition para o efeito de lift */
-  transform: perspective(1000px) translateZ(0) rotateY(0); /* Adicionar perspective e translateZ para criar o efeito de profundidade */
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 10px 5px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: perspective(1000px) translateZ(0) rotateY(0);
 }
 
 .button:hover {
-  transform: perspective(1000px) translateZ(20px) rotateY(10deg); /* Adicionar translateZ para criar o efeito de profundidade e rotateY para rotacionar o botão */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adicionar sombra para criar o efeito de lift */
+    transform: perspective(1000px) translateZ(20px) rotateY(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .button .button-image {
-  max-width: 100px; /* Definir o tamanho máximo da imagem */
-  display: block;
-  margin: 0 auto 10px; /* Adicionar margem na parte inferior da imagem */
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .button .button-text {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .button.inicial {
-  background-color: #fff;
-  color: #333;
-  cursor: default;
+    background-color: #fff;
+    color: #333;
+    cursor: default;
 }
 
 .button.inicial:hover {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .button.inicial > span {
-  font-size: 14px;
-  font-weight: normal;
+    font-size: 14px;
+    font-weight: normal;
 }
 
 .button.clicked {
-  background-color: #666;
+    background-color: #666;
 }
 
 #init-button {
-  background-color: #ff69b4;
-  position: relative; /* Adicionar posição relativa para alinhar a imagem e o texto */
+    background-color: #ff69b4;
+    position: relative;
 }
 
 #mid-button {
-  background-color: #ffff00;
+    background-color: #ffff00;
 }
 
 #adv-button {
-  background-color: #008000;
+    background-color: #008000;
 }
-/* y */
+
+/* Neon Button Styles */
+.neon-button {
+    background: transparent;
+    border: 2px solid #90ebca;
+    color: #90ebca;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 30px #90ebca, inset 0 0 30px #90ebca; /* Aumentei o valor para 30px */
+    text-shadow: 0 0 30px #90ebca; /* Aumentei o valor para 30px */
+}
+
+/* Merge Card and Neon Styles */
+.button.card-neon {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 30px #90ebca, inset 0 0 30px #90ebca; /* Aumentei o valor para 30px */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button.card-neon:hover {
+    transform: perspective(1000px) translateZ(20px) rotateY(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 30px #90ebca, inset 0 0 30px #90ebca; /* Aumentei o valor para 30px */
+    text-shadow: 0 0 30px #90ebca; /* Aumentei o valor para 30px */
+}
