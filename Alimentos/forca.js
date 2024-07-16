@@ -1,24 +1,24 @@
 // O bloco abaixo crias as variáveis
-var palavraselecionada; // Cria a variável que armazena a palavra selecionada para o jogo.
-var tentativas = 10 // Cria a variável de quantidades de tentativas do jogo da forca.
-var letrascorretas = []; // Cria a variável letras corretas já digitadas.
-var letrasincorretas = []; // Cria a variável letras incorretas já digitadas.
+var palavraselecionada;
+var tentativas = 10;
+var letrascorretas = [];
+var letrasincorretas = [];
 
 // O bloco abaixo cria a função para carregar as palavras do arquivo JSON e iniciar o jogo
 function iniciarJogo() {
   fetch('palavras.json')
-    .then(response => response.json()) // Converte a resposta para JSON
+    .then(response => response.json())
     .then(data => {
-      var palavras = data.palavras; // Armazena as palavras do JSON
-      palavraselecionada = palavras[Math.floor(Math.random() * palavras.length)]; // Seleciona uma palavra aleatória
-      exibirestadojogo(); // Exibe o estado inicial do jogo
+      var palavras = data.palavras;
+      palavraselecionada = palavras[Math.floor(Math.random() * palavras.length)];
+      exibirestadojogo();
     });
 }
 
 // O bloco abaixo cria a função para verificar se a letra está correta e atualizar o jogo
 function verificarletra() {
   var inputElement = document.getElementById('entrada-letra');
-  var letra = inputElement.value.toLowerCase(); // Captura a letra digitada e converte para minúscula
+  var letra = inputElement.value.toLowerCase();
   // O bloco abaixo verifica se a letra é válida (apenas letras de a-z e acentuadas)
   if (!letra.match(/^[a-zA-Zà-ú]$/)) { 
     alert("Por favor, insira uma letra válida.");
@@ -33,11 +33,11 @@ function verificarletra() {
   
   // O bloco abaixo verifica se a letra está na palavra selecionada  
   if (palavraselecionada.includes(letra)) {
-    letrascorretas.push(letra); // Adiciona a letra correta
+    letrascorretas.push(letra);
   } else {
-    letrasincorretas.push(letra); // Adiciona a letra incorreta
-    tentativas--; // Reduz o número de tentativas restantes
-    exibirenforcado(); // Exibe a parte correspondente do enforcado
+    letrasincorretas.push(letra);
+    tentativas--;
+    exibirenforcado();
   }
   
   exibirestadojogo(); // Atualiza a exibição do estado do jogo
@@ -51,7 +51,7 @@ function verificarletra() {
     } else {
       alert("Fim de jogo. Você perdeu!\nA palavra correta era: " + palavraselecionada);
     }
-    inputElement.disabled = true; // Desativa a entrada de letra
+    inputElement.disabled = true;
   }
 }
 
@@ -65,7 +65,7 @@ function exibirenforcado() {
     "mao-direita": ["mao-direita-dedo1", "mao-direita-dedo2", "mao-direita-dedo3", "mao-direita-dedo4", "mao-direita-dedo5"], "cabeca": ["cabeca-olho-esquerdo", "cabeca-olho-direito", "nariz", "cabeca-orelha-esquerda", "cabeca-orelha-direita", "cabelo", "boca"]
   };
 
-  pessoaEnforcadaElement.innerHTML = ""; // Limpa a exibição atual do enforcado
+  pessoaEnforcadaElement.innerHTML = "";
 
   // Exibe as partes do enforcado com base no número de tentativas restantes
   partesEnforcado.slice(0, partesEnforcado.length - tentativas).forEach(function(parte) {
@@ -88,10 +88,10 @@ function exibirenforcado() {
 function exibirestadojogo() {
   var estadoatual = "";
   for (var i = 0; i < palavraselecionada.length; i++) {
-    if (letrascorretas.includes(palavraselecionada[i])) {
-      estadoatual += palavraselecionada[i]; // Adiciona a letra correta ao estado atual
+    if (letrascorretas.includes(palavraselecionada[i]) || palavraselecionada[i] === " ") {
+      estadoatual += palavraselecionada[i];
     } else {
-      estadoatual += "_"; // Adiciona um sublinhado para letras não descobertas
+      estadoatual += "_";
     }
     estadoatual += " ";
   }
@@ -105,7 +105,7 @@ function exibirestadojogo() {
 // O bloco abaixo cria a função para verificar se o jogador venceu o jogo
 function verificarvitoria() {
   return palavraselecionada.split('').every(function(letra) {
-    return letrascorretas.includes(letra); // Verifica se todas as letras da palavra foram descobertas
+    return letra === " " || letrascorretas.includes(letra);
   });
 }
 
