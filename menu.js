@@ -2,8 +2,9 @@ const buttons = document.querySelectorAll('.button');
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        button.classList.toggle('clicked')
-        window.open('Alimentos/alimentos.html', '_self');
-        window.open('Lugaresbiblicos/lugaresbiblicos.html', '_self');
+        const url = button.getAttribute('data-url');
+        window.open(url, '_self');
     });
 });
+
+
