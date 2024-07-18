@@ -6,3 +6,5 @@ buttons.forEach(button => {
         window.open(url, '_self');
     });
 });
+
+
