@@ -1,3 +1,4 @@
+/* Importe a fonte Cherry Bomb One do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 
 h1 {
@@ -21,21 +22,44 @@ h1 {
     }
 }
 
+* {
+    font-family: "Verdana", sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    margin: 0;
+    color: #fff;
+}
+
 body {
     background-image: url('fundo.jpeg');
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
-    margin: 0;
+    /*margin: 0;*/
+    margin: 2rem;
     padding: 0;
 }
 
-.container {
+/*.container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 20px;
+}*/
+
+.container {
+    -webkit-perspective: 250px;
+    -moz-perspective: 250px;
+    width: 400px;
+    height: 200px;
+    top: 50px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .button {
@@ -58,6 +82,7 @@ body {
     transform: perspective(1000px) translateZ(0) rotateY(0);
 }
 
+/* Adiciona um efeito de transformação ao passar o mouse */
 .button:hover {
     transform: perspective(1000px) translateZ(20px) rotateY(10deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -78,6 +103,7 @@ body {
     text-shadow: 1px 1px 1px #0a0a0a;
 }
 
+/* Estilo para botões com efeito neon */
 .neon-button {
     background: transparent;
     border: 2px solid #90ebca;
@@ -86,34 +112,60 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
+/* Efeito neon ao passar o mouse */
 .neon-button:hover {
     box-shadow: 0 0 30px #90ebca, inset 0 0 30px #90ebca;
     text-shadow: 0 0 30px #90ebca;
 }
 
+/* Estilo para botões com efeito neon personalizado */
 .button.card-neon {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 30px #90ebca, inset 0 0 30px #90ebca;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Efeito neon ao passar o mouse nos botões card-neon */
 .button.card-neon:hover {
     transform: perspective(1000px) translateZ(20px) rotateY(10deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 30px #90ebca, inset 0 0 30px #90ebca;
     text-shadow: 0 0 30px #90ebca;
 }
 
+/* Estilo específico para o botão Alimentos */
 #init-button {
     background-color: #008000;
     position: relative;
 }
 
+/* Estilo específico para o botão Lugares Bíblicos */
 #mid-button {
     background-color: #ffff00;
 }
 
+/* Estilo específico para o botão Nível Avançado */
 #adv-button {
     background-color: #008000;
+}
+
+/* Estilo específico para o botão Nome Bíblico */
+#nome-biblico-button {
+    background-color: #ff4500;
+}
+
+/* Estilo específico para o botão Nome de Jogos */
+#nome-jogos-button {
+    background-color: #ff6347;
+}
+
+/* Estilo específico para o botão Nome de Carros */
+#nome-carros-button {
+    background-color: #4682b4;
+}
+
+/* Estilo específico para o botão Time de Futebol */
+#time-futebol-button {
+    background-color: #32cd32;
 }
 
 /* Responsividade */
