@@ -27,7 +27,7 @@ h1 {
 
 
 /* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
-body { 
+/*body { 
   background-image: url('fundo.png');
   margin: 20px;
   font-family: 'Oswald', sans-serif;
@@ -36,7 +36,21 @@ body {
   text-align: center;
   background-size: cover;
   background-position: fixed;
-} 
+} */
+
+body { 
+  background-image: url('fundo.png');
+  margin: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 
 /* O bloco abaixo cria as partes do enforcado */
 #pessoa-enforcada {

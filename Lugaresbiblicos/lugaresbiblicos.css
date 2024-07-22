@@ -1,29 +1,41 @@
+/* O bloco abaixo define a cor do título do jogo */
 h1 {
-  font-size: 72px; /* Altera o tamanho da fonte para 32 pixels */
-  color: #09e95f; /* Define a cor do texto do título */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-style: italic; /* Deixa o texto em itálico */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
-  text-align: center; /* Centraliza o texto */
-  animation: rotateY 10s infinite linear; /* Adiciona a animação de rotação no eixo Y */
+  font-size: 72px;
+  color: #09e95f;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
 }
 
-/* Define a animação de rotação no eixo Y */
-@keyframes rotateY {
-  from {
-      transform: rotateY(0deg);
+@keyframes spin {
+  0% {
+      --rotate: 0deg;
   }
-  to {
-      transform: rotateY(360deg);
+  100% {
+      --rotate: 360deg;
   }
 }
 
-/* O bloco abaixo insere a imagem de fundo da pagina  */
+
+/* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
 body { 
   background-image: url('fundo.png');
+  margin: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
   background-size: cover;
   background-position: fixed;
-  font-family: Arial, sans-serif;
 } 
 
 /* O bloco abaixo cria as partes do enforcado */
@@ -33,13 +45,13 @@ body {
   align-items: center;
   margin-top: 20px;
   font-size: 24px;
-  color: #333;
+  color: black;
 }
 
 /* O bloco abaixo insere a cor preta no corpo do enforcado */
 .cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda {
   margin: 5px;
-  background-color: #333;
+  background-color: black;
 }
 
 /* O bloco abaixo adiciona o tamanho da cabeça */
@@ -50,7 +62,7 @@ body {
   border-radius: 50%;
 }
 
-/* O bloco abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */
+/* Os blocos abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */
 #pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
   position: relative;
   width: 5px;
@@ -93,7 +105,7 @@ body {
   position: relative;
   width: 7px;
   height: 13px;
-  background-color: #333;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -113,7 +125,7 @@ body {
   left: 0px;
   width: 34.5px;
   height: 8px;
-  background-color: #333;
+  background-color: black;
   border-radius: 50px 50px 0 0px;
 }
 
@@ -148,7 +160,7 @@ body {
   right: -15.5px;
   width: 3px;
   height: 12px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
   transform: rotate(20deg);
   transform-origin: bottom right;
@@ -160,7 +172,7 @@ body {
   right: -21px;
   width: 2.5px;
   height: 15px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -170,7 +182,7 @@ body {
   right: -24.5px;
   width: 2.5px;
   height: 14px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -180,7 +192,7 @@ body {
   right: -28px;
   width: 2.5px;
   height: 11px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -190,7 +202,7 @@ body {
   right: -31.4px;
   width: 2.3px;
   height: 12px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -209,7 +221,7 @@ body {
   transform-origin: bottom right;
   width: 3px;
   height: 12px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -219,7 +231,7 @@ body {
   left: -20.8px;
   width: 2.5px;
   height: 15px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
@@ -229,18 +241,18 @@ body {
   left: -24.3px;
   width: 2.5px;
   height: 14px;
-  background-color: #333;
+  background-color: black;
   border-radius: 10px;
 }
 
 #pessoa-enforcada .mao-direita-dedo4 {
-  position: relative; /* Define a posição do dedo 4 direito, posicionando-o de acordo com o fluxo da página */
-  top: -298px; /* Define a posição do dedo 4 direito em relação ao topo da página */
-  left: -28px; /* Define a posição do dedo 4 direito à esquerda */
-  width: 2.5px; /*Define o tamanho da largura do dedo 4 direito */
-  height: 11px; /* Define o tamanho da altura dedo 4 direito */
-  background-color: #333; /* Define a cor de fundo do dedo 4 direito */
-  border-radius: 10px; /* Arredonda as extremidades do dedo 4 direito */
+  position: relative;
+  top: -298px;
+  left: -28px;
+  width: 2.5px;
+  height: 11px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 #pessoa-enforcada .mao-direita-dedo5 {
@@ -249,8 +261,8 @@ body {
   left: -31.4px;
   width: 2.3px;
   height: 12px;
-  background-color: #333;
-  border-radius: 10px; /* Arredonda as extremidades do dedo 5 direito */
+  background-color: black;
+  border-radius: 10px;
 }
 
 /* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */
@@ -263,109 +275,102 @@ body {
 
 /* O bloco abaixo adiciona o posicionamento da perna direita embaixo do tronco */
 #pessoa-enforcada .perna-esquerda {
-  top: -311px; /* Define a posição da perna esquerda em relação ao topo da página */
-  left: 10px; /* Define a posição da perna esquerda à esquerda*/
+  top: -311px;
+  left: 10px;
 }
 
 /* O bloco abaixo adiciona o sapato da perna esquerda */
 #pessoa-enforcada .sapato-esquerdo {
-  position: relative; /* Define a posição do sapato esquerdo, posicionando-o de acordo com o fluxo da página */
-  top: -317px; /* Define a posição do sapato esquerdo em relação ao topo da página */
-  right: -10px; /* Define a posição do sapato esquerdo à direita */
-  width: 16px; /* Define o tamanho da largura do sapato esquerdo */
-  height: 8px; /* Define o tamanho da altura do sapato esquerdo */
-  background-color: #333; /* Define a cor de fundo do sapato esquerdo */
-  border-radius: 10px; /* Arredonda as extremidades do sapato direito */
+  position: relative;
+  top: -317px;
+  right: -10px;
+  width: 16px;
+  height: 8px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 /* O bloco abaixo adiciona o posicionamento da perna esquerda embaixo do tronco */
 #pessoa-enforcada .perna-direita {
-  top: -379px; /* Define a posição em relação ao topo da página */
-  left: -10px; /* Define a posição da perna direita à esquerda*/
+  top: -379px;
+  left: -10px;
 }
 
 /* O bloco abaixo adiciona o sapato da perna esquerda */
 #pessoa-enforcada .sapato-direito {
-  position: relative; /* Define a posição do sapato direito, posicionando-o de acordo com o fluxo da página */
-  top: -385px; /* Define a posição do sapato direito em relação ao topo da página */
-  left: -10px; /* Define a posição do sapato direito à esquerda */
-  width: 16px; /* Define o tamanho da largura do sapato direito */
-  height: 8px; /* Define o tamanho da altura do sapato direito */
-  background-color: #333; /* Define a cor de fundo do sapato direito */
-  border-radius: 10px;  /* Arredonda as extremidades do sapato direito */
-}
-
-/* ## Os blocos abaixo usam parte do arquivo forca.CSS do Meu_Primeiro_Jogo a qual foi criado ## */
-
-/* O bloco abaixo define a fonte e seu estilo junto com a posição */
-body {
-  margin: 20px; /* Define a margem em torno do elemento body */
-  font-family: Arial, sans-serif; /* Define a família da fonte principal e uma alternativa genérica */
-  text-align: center; /* Alinha o texto ao centro */
-}
-
-/* O bloco abaixo define a cor do título do jogo */
-h1 {
-  color: #333; /* Define a cor do texto do título */
+  position: relative;
+  top: -385px;
+  left: -10px;
+  width: 16px;
+  height: 8px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 /*O bloco abaixo ajusta a posição dos textos*/
 #estado-jogo, #tentativas-restantes, #letras-incorretas {
-  position: absolute; /* Posiciona os textos de forma independente */
-  left: 50%; /* Centralizar o texto na horizontalmente */
-  transform: translateX(-50%); /* Ajusta a largura do próprio texto */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* O bloco abaixo define o tamanho da fonte e a sua posição */
 #estado-jogo {
-  top: 360px; /* Define a posição do texto em relação ao topo da página */
-  margin-bottom: 5px; /* Define a margem inferior */
-  font-size: 24px; /* Define o tamanho da fonte do texto */
-  text-align: center; /* Alinha o texto ao centro */
+  top: 300px;
+  margin-bottom: 5px;
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  text-align: center;
 }
 
 /* O bloco abaixo define o tamanho da fonte e a sua posição */
 #tentativas-restantes {
-  top: 400px; /* Define a posição do texto em relação ao topo da página */
-  margin-bottom: 5px; /* Define a margem inferior */ 
-  font-size: 18px; /* Define o tamanho da fonte do texto */
+  top: 350px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);/
 }
 
 /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
 #letras-incorretas {
-  top: 430px;/* Posiciona os textos de forma independente */
-  margin-bottom: 5px; /* Define a margem inferior */
-  font-size: 18px; /* Define o tamanho da fonte do texto */
-  color: red; /* Define a cor das letras incorretas */
+  top: 380px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
+
 
 /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
 #entrada-letra {
-  position: absolute; /* Posiciona os textos de forma independente */
-  top: 450px; /* Define a posição do texto em relação ao topo da página */
-  left: 46%; /* Centralizar o texto na horizontalmente */
-  transform: translateX(-50%); /* Ajusta a largura do próprio texto */
-  min-width: 5px; /* Define o tamanho da largura mínima da caixa de input */
-  max-width: 12px; /* Define o tamanho da largura máxima da caixa de input */ 
-  margin-top: 10px; /* Define a distância superior do conteúdo do texto */
-  padding: 5px; /* Define o preenchimento em torno do conteúdo do texto */
-  font-size: 16px; /* Define o tamanho da fonte do texto */
+  position: absolute;
+  top: 420px;
+  left: 44.5%;
+  transform: translateX(-50%);
+  min-width: 5px;
+  max-width: 12px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
 }
 
 /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
 #verificar-letra {
-  position: absolute; /* Posiciona os textos de forma independente */
-  top: 450px; /* Define a posição do texto em relação ao topo da página */
-  left: 55%; /* Centralizar o texto na horizontalmente */
-  transform: translateX(-50%); /* Ajustar a largura do próprio texto */
-  margin-top: 10px; /* Define a distância superior do conteúdo do texto */ 
-  padding: 5px 10px; padding: 5px 10px; /* Define o preenchimento no topo e na parte inferior das laterais */
-  font-size: 16px; /* Define o tamanho da fonte do texto */
-  cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o Texto */
+  position: absolute;
+  top: 420px;
+  left: 51.7%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  padding: 5px 10px; padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* O bloco abaixo define a cor de fundo do botão e quando o botão e pressionado */
 #verificar-letra:active {
-  color: white; /* Define a cor botão verificar*/
-  background-color: blue; /* Define a cor do botão ao clicar nele */
+  color: white;
+  background-color: blue;
 }
