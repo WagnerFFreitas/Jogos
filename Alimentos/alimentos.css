@@ -41,19 +41,38 @@ body {
 
 /* Ajustes para dispositivos móveis */
 @media only screen and (max-width: 768px) {
+  /* Ajustar margens, tamanhos e posições dos elementos para evitar sobreposição */
   .tentativas-restantes {
-    font-size: 18px;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 20px;
   }
 
   .letras-incorretas {
-    font-size: 16px;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 40px;
   }
 
   .botao-verificar {
-    font-size: 16px;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 20px;
+  }
+}
+
+/* Ajustes específicos para dispositivos menores */
+@media only screen and (max-width: 480px) {
+  .tentativas-restantes {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .letras-incorretas {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .botao-verificar {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 
