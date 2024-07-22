@@ -267,18 +267,45 @@
   border-radius: 10px;  /* Arredonda as extremidades do sapato direito */
 }
 
-/* ## Os blocos abaixo usam parte do arquivo forca.CSS do Meu_Primeiro_Jogo a qual foi criado ## */
-
 /* O bloco abaixo define a fonte e seu estilo junto com a posição */
 body {
-  margin: 20px; /* Define a margem em torno do elemento body */
-  font-family: Arial, sans-serif; /* Define a família da fonte principal e uma alternativa genérica */
-  text-align: center; /* Alinha o texto ao centro */
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('fundo.jpeg');
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-position: fixed;
 }
 
 /* O bloco abaixo define a cor do título do jogo */
 h1 {
-  color: #333; /* Define a cor do texto do título */
+  font-size: 72px;
+  color: #09e95f; 
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      --rotate: 0deg;
+  }
+  100% {
+      --rotate: 360deg;
+  }
 }
 
 /*O bloco abaixo ajusta a posição dos textos*/

@@ -1,19 +1,23 @@
+/* O bloco abaixo define uma propriedade CSS personalizada chamada --rotate */
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
 }
 
+/* O bloco abaixo define variáveis CSS globais */
 :root {
     --card-height: 65vh;
     --card-width: calc(var(--card-height) / 1.5);
 }
 
+/* O bloco abaixo define o estilos para o corpo da página */
 body {
     margin: 2rem;
     background-color: #212123;
 }
 
+/* O bloco abaixo define o estilos para o título */
 h1 {
     font-size: 72px;
     color: #09e95f;
@@ -31,6 +35,7 @@ h1 {
     animation: spin 2.5s linear infinite;
 }
 
+/* O bloco abaixo define a animação que gira o gradiente de fundo */
 @keyframes spin {
     0% {
     --rotate: 0deg;
@@ -40,6 +45,7 @@ h1 {
     }
 }
 
+/* O bloco abaixo define o estilos para o carrossel */
 .carrosel {
     -webkit-perspective: 250px;
     -moz-perspective: 250px;
@@ -53,6 +59,7 @@ h1 {
     align-items: center;
 }
 
+/* O bloco abaixo define a animação do efeito carrossel para WebKit */
 @-webkit-keyframes efeitoCarrosel {
     from {
         -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
@@ -73,6 +80,7 @@ h1 {
     }
 }
 
+/* O bloco abaixo define a animação do efeito carrossel para Mozilla */
 @-moz-keyframes efeitoCarrosel {
     from {
         -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
@@ -91,41 +99,44 @@ h1 {
     }
 }
 
+/* O bloco abaixo define o estilos para os cartões no carrossel */
 .caixa__card {
-    width: 100px; /* Define uma largura menor */
-    height: 150px; /* Define uma altura menor */
+    width: 100px;
+    height: 150px;
     background-color: #442222;
     position: absolute;
     display: flex;
-    flex-direction: column; /* Para alinhar verticalmente */
+    flex-direction: column;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     top: 35px;
-    left: 37%; /* Centralizar horizontalmente */
-    transform: translateX(-50%); /* Ajustar a posição */
+    left: 37%;
+    transform: translateX(-50%);
     font-size: 9px;
     border-radius: 8px;
     box-shadow: 0px 0px 20px rgb(248, 247, 247);
     text-align: center;
     -webkit-animation-name: efeitoCarrosel;
     -moz-animation-name: efeitoCarrosel;
-    -webkit-animation-duration: 10s;
-    -moz-animation-duration: 10s;
+    -webkit-animation-duration: 15s;
+    -moz-animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
-    padding: 5px; /* Diminuir o padding */
+    padding: 5px;
 }
 
+/* O bloco abaixo define o estilos para a imagem dentro dos cartões */
 .caixa__card img {
-    margin-bottom: 0px; /* Diminuir o espaço entre a imagem e o texto */
+    margin-bottom: 0px;
 }
 
+/* O bloco abaixo define o estilos para o texto dentro dos cartões */
 .caixa__card p {
     margin: 0;
-    font-size: 12px; /* Ajustar o tamanho da fonte */
+    font-size: 12px;
     color: white;
     font-weight: bold;
     font-style: italic;
@@ -142,12 +153,13 @@ h1 {
     line-height: 1.2;
 }
 
+/* O bloco abaixo define o estilos para os cartões quando o mouse passa por cima */
 .caixa__card:hover {
     border: solid #4466cc 3px;
     box-shadow: 0px 0px 10px #4466cc;
 }
 
-
+/* O bloco abaixo define o estilos para a classe alimentos */
 .alimentos {
     background: linear-gradient(-229deg, #0093E9, #80D0C7);
     -webkit-animation-delay: -7s;
@@ -155,42 +167,49 @@ h1 {
     text-align: center;
 }
 
+/* O bloco abaixo define o estilos para a classe do nome de lugares bíblicos */
 .lugaresbiblicos {
     background: linear-gradient(-229deg, #00DBDE, #FC00FF);
     -webkit-animation-delay: -6s;
     -moz-animation-delay: -6s;
 }
 
+/* O bloco abaixo define o estilos para a classe do nomes bíblicos */
 .nomebiblicos {
     background: linear-gradient(-229deg, #50d990, #d4d054);
     -webkit-animation-delay: -5s;
     -moz-animation-delay: -5s;
 }
 
+/* O bloco abaixo define o estilos para a classe do nome de jogos */
 .nomejogos {
     background: linear-gradient(-229deg, #cf91ff, #5782F5);
     -webkit-animation-delay: -4s;
     -moz-animation-delay: -4s;
 }
 
+/* O bloco abaixo define o estilos para a classe de nomes de carros */
 .nomecarros {
     background: linear-gradient(-229deg, #642B73, #C6426E);
     -webkit-animation-delay: -3s;
     -moz-animation-delay: -3s;
 }
 
+/* O bloco abaixo define o estilos para a classe do nomes de times de futebol do mundo */
 .timefutebol {
     background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
     -webkit-animation-delay: -2s;
     -moz-animation-delay: -2s;
 }
 
+/* O bloco abaixo define o estilos para a classe de nomes de pessoas */
 .nomepessoas {
     background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
     -webkit-animation-delay: -1s;
     -moz-animation-delay: -1s;
 }
 
+/* O bloco abaixo define o estilos para a classe de palavras do dicionario */
 .dicionario {
     background: linear-gradient(-229deg, #1472ff, #A8EB12);
 }
