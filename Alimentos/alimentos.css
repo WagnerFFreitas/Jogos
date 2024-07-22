@@ -25,19 +25,7 @@ h1 {
   }
 }
 
-
 /* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
-/*body { 
-  background-image: url('fundo.png');
-  margin: 20px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  background-size: cover;
-  background-position: fixed;
-} */
-
 body { 
   background-image: url('fundo.png');
   margin: 20px;
@@ -51,6 +39,23 @@ body {
   background-position: center;
 }
 
+/* Ajustes para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  .tentativas-restantes {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .letras-incorretas {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .botao-verificar {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
 
 /* O bloco abaixo cria as partes do enforcado */
 #pessoa-enforcada {
