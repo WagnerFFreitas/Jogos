@@ -4,21 +4,21 @@ cards.forEach(card => {
     card.addEventListener('click', () => {
         let url;
         if (card.classList.contains('alimentos')) {
-            url = 'alimentos/alimentos.html';
+            url = 'Alimentos/alimentos.html';
         } else if (card.classList.contains('lugaresbiblicos')) {
-            url = 'lugaresbiblicos/lugaresbiblicos.html';
+            url = 'Lugaresbiblicos/lugaresbiblicos.html';
         } else if (card.classList.contains('nomebiblicos')) {
-            url = 'nomebiblicos/nomebiblicos.html';
+            url = 'Nomebiblicos/nomebiblicos.html';
         } else if (card.classList.contains('nomejogos')) {
-            url = 'nomejogos/nomejogos.html';
+            url = 'Nomejogos/nomejogos.html';
         } else if (card.classList.contains('nomecarros')) {
-            url = 'nomecarros/nomecarros.html';
+            url = 'Nomecarros/nomecarros.html';
         } else if (card.classList.contains('timefutebol')) {
-            url = 'timefutebol/timefutebol.html';
+            url = 'Timefutebol/timefutebol.html';
         } else if (card.classList.contains('dicionario')) {
-            url = 'dicionario/dicionario.html';
+            url = 'Dicionario/dicionario.html';
         } else if (card.classList.contains('nomepessoas')) {
-            url = 'nomepessoas/nomepessoas.html';
+            url = 'Nomepessoas/nomepessoas.html';
         }
 
         if (url) {
