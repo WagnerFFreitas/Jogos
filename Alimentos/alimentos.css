@@ -34,45 +34,32 @@ body {
   font-style: italic;
   text-align: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
 }
 
-/* Ajustes para dispositivos móveis */
-@media only screen and (max-width: 768px) {
-  /* Ajustar margens, tamanhos e posições dos elementos para evitar sobreposição */
-  .tentativas-restantes {
+#letras-incorretas {
+  top: 430px;/* Posiciona os textos de forma independente */
+  margin-bottom: 5px; /* Define a margem inferior */
+  font-size: 28px; /* Define o tamanho da fonte do texto */
+  color: rgb(119, 4, 4); /* Define a cor das letras incorretas */
+  text-shadow: 2px 2px 4px white; /* Adiciona uma sombra branca ao texto */
+}
+
+@media (max-width: 768px) {
+  #tentativas-restantes {
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+  }
+  
+  #letras-incorretas {
+    top: 450px; /* Ajuste a posição conforme necessário */
+    font-size: 22px; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+
+  button {
+    margin-top: 20px; /* Ajuste a margem conforme necessário */
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-top: 20px;
-  }
-
-  .letras-incorretas {
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-top: 40px;
-  }
-
-  .botao-verificar {
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-top: 20px;
-  }
-}
-
-/* Ajustes específicos para dispositivos menores */
-@media only screen and (max-width: 480px) {
-  .tentativas-restantes {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-
-  .letras-incorretas {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-
-  .botao-verificar {
-    font-size: 14px;
-    margin-top: 10px;
   }
 }
 
