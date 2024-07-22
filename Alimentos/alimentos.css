@@ -37,32 +37,6 @@ body {
   background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
 }
 
-#letras-incorretas {
-  top: 430px;/* Posiciona os textos de forma independente */
-  margin-bottom: 5px; /* Define a margem inferior */
-  font-size: 28px; /* Define o tamanho da fonte do texto */
-  color: rgb(119, 4, 4); /* Define a cor das letras incorretas */
-  text-shadow: 2px 2px 4px white; /* Adiciona uma sombra branca ao texto */
-}
-
-@media (max-width: 768px) {
-  #tentativas-restantes {
-    font-size: 20px;
-    position: relative;
-    top: 20px;
-  }
-  
-  #letras-incorretas {
-    top: 450px; /* Ajuste a posição conforme necessário */
-    font-size: 22px; /* Ajuste o tamanho da fonte conforme necessário */
-  }
-
-  button {
-    margin-top: 20px; /* Ajuste a margem conforme necessário */
-    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-  }
-}
-
 /* O bloco abaixo cria as partes do enforcado */
 #pessoa-enforcada {
   display: flex;
