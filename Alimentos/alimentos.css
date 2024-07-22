@@ -1,3 +1,4 @@
+/* O bloco abaixo define a cor do título do jogo */
 h1 {
   font-size: 72px;
   color: #09e95f;
@@ -25,7 +26,7 @@ h1 {
 }
 
 
-/* O bloco abaixo insere a imagem de fundo da pagina  e define o tipo da fonte*/
+/* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
 body { 
   background-image: url('fundo.png');
   margin: 20px;
@@ -347,7 +348,7 @@ body {
 #entrada-letra {
   position: absolute;
   top: 420px;
-  left: 45%;
+  left: 44.5%;
   transform: translateX(-50%);
   min-width: 5px;
   max-width: 12px;
@@ -360,7 +361,7 @@ body {
 #verificar-letra {
   position: absolute;
   top: 420px;
-  left: 52.5%;
+  left: 51.7%;
   transform: translateX(-50%);
   margin-top: 10px;
   padding: 5px 10px; padding: 5px 10px;
