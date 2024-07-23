@@ -137,7 +137,6 @@ body {
   border-radius: 20px;
 }
 
-
 /* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */
 #pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito {
   position: relative;
@@ -342,7 +341,6 @@ body {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
-
 /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
 #entrada-letra {
   position: absolute;
@@ -374,11 +372,8 @@ body {
   background-color: blue;
 }
 
-/*-------*/
-/* ... resto do código ... */
-
+/*O bloco abaixo ajusta o jogo para telas menores*/
 @media only screen and (max-width: 480px) {
-  /* Ajuste tamanhos de fonte e margens para caber na tela menor */
   h1 {
     font-size: 36px;
     margin: 10px;
@@ -388,14 +383,30 @@ body {
     margin-top: 10px;
   }
   
-  #estado-jogo, #tentativas-restantes, #letras-incorretas {
-    font-size: 18px;
-    top: 200px; /* ajuste posição para caber na tela menor */
+  #estado-jogo {
+    font-size: 22px;
+    top: 300px;
   }
   
-  #entrada-letra, #verificar-letra {
-    top: 250px; /* ajuste posição para caber na tela menor */
-    font-size: 14px;
+  #tentativas-restantes {
+    font-size: 18px;
+    top: 335px;
+  }
+  
+  #letras-incorretas {
+    font-size: 18px;
+    top: 360px;
+  }
+  
+  #entrada-letra {
+    top: 450px;
+    left: 100px;
+    font-size: 16px;
+  }
+
+  #verificar-letra {
+    top: 450px;
+    font-size: 16px;
   }
 }
 
@@ -421,7 +432,6 @@ body {
     margin-bottom: 10px;
   }
 }
-
 
 @media only screen and (max-width: 480px) {
   #verificar-letra {
