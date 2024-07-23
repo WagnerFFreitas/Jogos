@@ -1,0 +1,2158 @@
+
+
+
+/* Layout responsivo de colunas */
+@media (max-width: 768px) {
+  #pessoa-enforcada {
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  #estado-jogo, #tentativas-restantes, #letras-incorretas, #entrada-letra, #verificar-letra {
+    width: 49%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tamanho de fonte responsivo */
+@media (max-width: 768px) {
+  #estado-jogo, #tentativas-restantes, #letras-incorretas, #entrada-letra, #verificar-letra {
+    font-size: 14px;
+  }
+}
+
+/* Botões responsivos */
+@media (max-width: 768px) {
+  #verificar-letra, #entrada-letra {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+
+------
+/* Título responsivo */
+h1 {
+  font-size: 72px; /* Tamanho base para telas maiores */
+  color: #09e95f;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px; /* Tamanho menor para telas menores */
+  }
+}
+
+/* Fundo da página */
+body {
+  background-image: url('fundo.png');
+  margin: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* Partes do enforcado */
+#pessoa-enforcada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+/* Cabeça do enforcado */
+#pessoa-enforcada .cabeca {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Olhos, nariz e boca da cabeça */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+  top: -31.5px;
+  left: 8px;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+  top: -36.5px;
+  right: 8px;
+}
+
+#pessoa-enforcada .nariz {
+  position: relative;
+  top: -40px;
+  left: -10x;
+  width: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+  position: relative;
+  top: -71px;
+  left: 0px;
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+/* Orelhas da cabeça */
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+  position: relative;
+  width: 7px;
+  height: 13px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+  top: -51.5px;
+  left: 20px;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+  top: -65px;
+  right: 20px;
+}
+
+#pessoa-enforcada .cabelo {
+  position: relative;
+  top: -91px;
+  left: 0px;
+  width: 34.5px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50px 50px 0
+
+------
+
+/* Título responsivo */
+h1 {
+  font-size: 72px; /* Tamanho base para telas maiores */
+  color: #09e95f;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px; /* Tamanho menor para telas menores */
+  }
+}
+
+/* Fundo da página */
+body {
+  background-image: url('fundo.png');
+  margin: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* Partes do enforcado */
+#pessoa-enforcada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+/* Cabeça do enforcado */
+#pessoa-enforcada .cabeca {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Olhos, nariz e boca da cabeça */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+  top: -31.5px;
+  left: 8px;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+  top: -36.5px;
+  right: 8px;
+}
+
+#pessoa-enforcada .nariz {
+  position: relative;
+  top: -40px;
+  left: -10x;
+  width: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+  position: relative;
+  top: -71px;
+  left: 0px;
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+/* Orelhas da cabeça */
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+  position: relative;
+  width: 7px;
+  height: 13px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+  top: -51.5px;
+  left: 20px;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+  top: -65px;
+  right: 20px;
+}
+
+#pessoa-enforcada .cabelo {
+  position: relative;
+  top: -91px;
+  left: 0px;
+  width: 34.5px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50px 50px 0 0px;
+}
+
+/* Tronco do en
+
+------- 
+/* Título responsivo */
+h1 {
+  font-size: 72px; /* Tamanho base para telas maiores */
+  color: #09e95f;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px; /* Tamanho menor para telas menores */
+  }
+}
+
+/* Fundo da página */
+body {
+  background-image: url('fundo.png');
+  margin: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* Partes do enforcado */
+#pessoa-enforcada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+/* Cabeça do enforcado */
+#pessoa-enforcada .cabeca {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Olhos, nariz e boca da cabeça */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+  top: -31.5px;
+  left: 8px;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+  top: -36.5px;
+  right: 8px;
+}
+
+#pessoa-enforcada .nariz {
+  position: relative;
+  top: -40px;
+  left: -10x;
+  width: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+  position: relative;
+  top: -71px;
+  left: 0px;
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+/* Orelhas da cabeça */
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+  position: relative;
+  width: 7px;
+  height: 13px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+  top: -51.5px;
+  left: 20px;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+  top: -65px;
+  right: 20px;
+}
+
+#pessoa-enforcada .cabelo {
+  position: relative;
+  top: -91px;
+  left: 0px;
+  width: 34.5px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50px 50px 0 0px;
+}
+
+/* Tronco do en
+
+-------
+
+/* Título responsivo */
+h1 {
+  font-size: 72px; /* Tamanho base para telas maiores */
+  color: #09e95f;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px; /* Tamanho menor para telas menores */
+  }
+}
+
+/* Fundo da página */
+body {
+  background-image: url('fundo.png');
+  margin: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* Partes do enforcado */
+#pessoa-enforcada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+/* Cabeça do enforcado */
+#pessoa-enforcada .cabeca {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Olhos, nariz e boca da cabeça */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+  top: -31.5px;
+  left: 8px;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+  top: -36.5px;
+  right: 8px;
+}
+
+#pessoa-enforcada .nariz {
+  position: relative;
+  top: -40px;
+  left: -10x;
+  width: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+  position: relative;
+  top: -71px;
+  left: 0px;
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+/* Orelhas da cabeça */
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+  position: relative;
+  width: 7px;
+  height: 13px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+  top: -51.5px;
+  left: 20px;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+  top: -65px;
+  right: 20px;
+}
+
+#pessoa-enforcada .cabelo {
+  position: relative;
+  top: -91px;
+  left: 0px;
+  width: 34.5px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50px 
+
+--------‐-----
+
+Claro! Vamos destacar as alterações e adições que fiz ao seu CSS original para torná-lo mais responsivo e adequado para dispositivos móveis. Vou apresentar abaixo as linhas que foram adicionadas ou modificadas, com explicações.
+
+### Principais Alterações e Adições
+
+1. **Viewport Meta Tag (HTML)**
+   - Essa linha deve ser adicionada ao seu arquivo HTML, dentro do `<head>`, para garantir que a página responda corretamente ao tamanho da tela do dispositivo. **Esta linha não estava no CSS, mas é essencial para o funcionamento responsivo:**
+   ```html
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   ```
+
+2. **Uso de Unidades Responsivas**
+   - **Substituí unidades fixas (px) por unidades responsivas (vw, vh) em várias partes do CSS:**
+   ```css
+   h1 {
+     font-size: 6vw; /* Mudança de 72px para 6vw */
+   }
+
+   #pessoa-enforcada {
+     font-size: 2.5vw; /* Mudança de 24px para 2.5vw */
+   }
+
+   #pessoa-enforcada .cabeca {
+     width: 10vw; /* Mudança de 40px para 10vw */
+     height: 10vw; /* Mudança de 40px para 10vw */
+   }
+
+   #pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+     width: 1.5vw; /* Mudança de 5px para 1.5vw */
+     height: 1.5vw; /* Mudança de 5px para 1.5vw */
+   }
+
+   /* Similarmente, outros elementos foram ajustados para usar unidades responsivas */
+   ```
+
+3. **Media Queries**
+   - **Adicionei uma media query para ajustar o design em telas menores:**
+   ```css
+   @media (max-width: 600px) {
+     h1 {
+       font-size: 50px; /* Ajuste para dispositivos pequenos */
+     }
+
+     #estado-jogo, #tentativas-restantes, #letras-incorretas {
+       font-size: 20px; /* Ajuste para dispositivos pequenos */
+     }
+
+     #entrada-letra, #verificar-letra {
+       font-size: 12px; /* Ajuste para dispositivos pequenos */
+     }
+   }
+   ```
+
+4. **Ajustes de Posicionamento**
+   - **Ajustei o posicionamento de alguns elementos para melhorar a aparência em dispositivos menores. Por exemplo:**
+   ```css
+   /* Exemplo de ajustes de posicionamento */
+   #pessoa-enforcada .braco-esquerdo {
+     top: -135%; /* Mudança de valores para adequar ao novo tamanho */
+     right: -10%; /* Ajuste para melhor centralização */
+   }
+
+   #pessoa-enforcada .perna-esquerda {
+     top: -311%; /* Mudança de valores para adequar ao novo tamanho */
+     left: 5%; /* Ajuste para centralizar melhor */
+   }
+   ```
+
+5. **Tamanhos de Texto e Botões**
+   - **Ajustei os tamanhos dos textos e botões para que sejam mais confortáveis em dispositivos móveis:**
+   ```css
+   #verificar-letra {
+     font-size: 2vw; /* Mudança de 16px para 2vw */
+   }
+   ```
+
+### Resumo das Linhas Alteradas
+
+Aqui estão algumas das linhas específicas que foram alteradas ou adicionadas:
+
+```css
+h1 {
+  font-size: 6vw; /* Mudança de 72px para 6vw */
+}
+
+#pessoa-enforcada {
+  font-size: 2.5vw; /* Mudança de 24px para 2.5vw */
+}
+
+#pessoa-enforcada .cabeca {
+  width: 10vw; /* Mudança de 40px para 10vw */
+  height: 10vw; /* Mudança de 40px para 10vw */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 50px; /* Ajuste para dispositivos pequenos */
+  }
+
+  #estado-jogo, #tentativas-restantes, #letras-incorretas {
+    font-size: 20px; /* Ajuste para dispositivos pequenos */
+  }
+
+  #entrada-letra, #verificar-letra {
+    font-size: 12px; /* Ajuste para dispositivos pequenos */
+  }
+}
+```
+
+### Conclusão
+
+Essas mudanças tornam seu site mais responsivo e amigável para dispositivos móveis, permitindo que o conteúdo se ajuste adequadamente ao tamanho da tela. Se você tiver mais perguntas ou precisar de mais ajuda, sinta-se à vontade para perguntar!
+
+
+----------
+
+
+⚔️ Arena (battle)⚔️ Arena 
+
+
+
+
+(side-by-side)💬 Direct Chat🏆 Leaderboardℹ️ About Us
+
+⚔️ LMSYS Chatbot Arena (Multimodal): Benchmarking LLMs and VLMs in the Wild
+
+Blog | GitHub | Paper | Dataset | Twitter | Discord | Kaggle Competition
+
+Note: GPT-4o mini (early version) result released at https://x.com/lmsysorg/status/1813999088758673875!
+
+📜 Rules
+
+Ask any question to two anonymous models (e.g., ChatGPT, Gemini, Claude, Llama) and vote for the better one!
+
+You can continue chatting until you identify a winner.
+
+Vote won't be counted if model identity is revealed during conversation.
+
+NEW Image Support: Upload an image on your first turn to unlock the multimodal arena! Images should be less than 15MB.
+
+🏆 Chatbot Arena Leaderboard
+
+We've collected 1,000,000+ human votes to compute an LLM Elo leaderboard for 100+ models. Find out who is the 🥇LLM Champion here!
+
+👇 Chat now!
+
+🔍 Expand to see the descriptions of 77 models▼
+
+Model A
+
+Pode continuar
+
+Claro! Onde paramos? Se puder me dar um contexto ou a última coisa que discutimos, poderei continuar de onde paramos.
+
+Você estava acrescentando algumas alterações no código lhe fornecido para que ele funcionasse bem no navegador do celular
+
+Entendi! Para garantir que um site funcione bem em navegadores de celular, precisamos focar em um design responsivo. Isso envolve o uso de CSS media queries, flexbox ou grid layout, e outras práticas de design que ajudam a adaptar o conteúdo para diferentes tamanhos de tela.
+
+Vamos começar com um exemplo básico de HTML e CSS que ilustra como criar um layout responsivo.
+
+HTML (index.html)
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Responsive Design</title> <link rel="stylesheet" href="styles.css"> </head> <body> <header> <h1>My Responsive Site</h1> <nav> <ul> <li><a href="#home">Home</a></li> <li><a href="#about">About</a></li> <li><a href="#contact">Contact</a></li> </ul> </nav> </header> <main> <section id="home"> <h2>Welcome to My Site</h2> <p>This is a responsive web page example.</p> </section> <section id="about"> <h2>About Us</h2> <p>Learn more about what we do.</p> </section> <section id="contact"> <h2>Contact Us</h2> <p>Get in touch with us.</p> </section> </main> <footer> <p>&copy; 2024 My Responsive Site</p> </footer> </body> </html> 
+
+CSS (styles.css)
+
+* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; } header { background: #333; color: #fff; padding: 1rem 0; text-align: center; } header h1 { margin-bottom: 0.5rem; } nav ul { list-style: none; padding: 0; } nav ul li { display: inline; margin-right: 1rem; } nav ul li a { color: #fff; text-decoration: none; } main { padding: 1rem; } section { margin-bottom: 2rem; } footer { background: #333; color: #fff; text-align: center; padding: 1rem 0; position: fixed; width: 100%; bottom: 0; } @media (max-width: 768px) { nav ul li { display: block; margin: 0.5rem 0; } footer { position: relative; } } 
+
+Explicação:
+
+Meta Tag de Viewport: Adicionamos <meta name="viewport" content="width=device-width, initial-scale=1.0"> no HTML para garantir que o layout seja dimensionado corretamente em diferentes dispositivos.
+
+Reset de CSS: Usamos * { margin: 0; padding: 0; box-sizing: border-box; } para garantir que todos os elementos tenham um comportamento consistente.
+
+Estilo Base: Definimos estilos básicos para o corpo, cabeçalho, navegação, seções principais e rodapé.
+
+Media Queries: Utilizamos uma media query para telas com largura máxima de 768px (@media (max-width: 768px)). Nesta media query, alteramos o layout da navegação para exibir os itens em bloco (um abaixo do outro) e ajustamos o rodapé para que não seja fixo na parte inferior da tela em dispositivos móveis.
+
+Esse é um exemplo simples, mas cobre os princípios básicos de um design responsivo. Dependendo das necessidades do seu projeto, você pode adicionar mais media queries e ajustar os estilos para diferentes pontos de interrupção (breakpoints).
+
+/* O bloco abaixo define a cor do título do jogo */
+h1 {
+font-size: 72px;
+color: #09e95f;
+font-weight: bold;
+font-style: italic;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+text-align: center;
+margin: 20px;
+background: linear-gradient(
+var(--rotate),
+#5ddcff, #3c67e3 43%, #4e00c2
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+0% {
+--rotate: 0deg;
+}
+100% {
+--rotate: 360deg;
+}
+}
+
+/* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
+body {
+background-image: url('fundo.png');
+margin: 20px;
+font-family: 'Oswald', sans-serif;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+background-size: cover;
+background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* O bloco abaixo cria as partes do enforcado */
+#pessoa-enforcada {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+font-size: 24px;
+color: black;
+}
+
+/* O bloco abaixo insere a cor preta no corpo do enforcado */
+.cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda {
+margin: 5px;
+background-color: black;
+}
+
+/* O bloco abaixo adiciona o tamanho da cabeça */
+#pessoa-enforcada .cabeca {
+position: relative;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+/* Os blocos abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+position: relative;
+width: 5px;
+height: 5px;
+background-color: white;
+border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+top: -31.5px;
+left: 8px;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+top: -36.5px;
+right: 8px;
+}
+
+#pessoa-enforcada .nariz {
+position: relative;
+top: -40px;
+left: -10x;
+width: 5px;
+height: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+position: relative;
+top: -71px;
+left: 0px;
+width: 20px;
+height: 5px;
+background-color: white;
+border-radius: 0 0 50px 50px;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+position: relative;
+width: 7px;
+height: 13px;
+background-color: black;
+border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+top: -51.5px;
+left: 20px;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+top: -65px;
+right: 20px;
+}
+
+*#pessoa-enforcada .cabelo {
+position: relative;
+top: -91px;
+left: 0px;
+width: 34.5px;
+height: 8px;
+background-color: black;
+border-radius: 50px 50px 0 0px;
+}
+
+/* O bloco abaixo adiciona o tamanho do tronco */
+#pessoa-enforcada .tronco {
+position: relative;
+top: -70px;
+width: 30px;
+height: 60px;
+border-radius: 20px;
+}
+
+/* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */
+#pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito {
+position: relative;
+width: 15px;
+height: 40px;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço direito à direita do tronco */
+#pessoa-enforcada .braco-esquerdo {
+top: -135px;
+right: -25px;
+}
+
+/* Os blocos abaixo adiciona os dedos da mao esquerda */
+#pessoa-enforcada .mao-esquerda-dedo1 {
+position: relative;
+top: -149px;
+right: -15.5px;
+width: 3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+transform: rotate(20deg);
+transform-origin: bottom right;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo2 {
+position: relative;
+top: -160px;
+right: -21px;
+width: 2.5px;
+height: 15px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo3 {
+position: relative;
+top: -172px;
+right: -24.5px;
+width: 2.5px;
+height: 14px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo4 {
+position: relative;
+top: -184px;
+right: -28px;
+width: 2.5px;
+height: 11px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo5 {
+position: relative;
+top: -199px;
+right: -31.4px;
+width: 2.3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço esquerdo à esquerda do tronco */
+#pessoa-enforcada .braco-direito {
+top: -249px;
+left: -25px;
+}
+
+/* Os blocos abaixo adiciona os dedos da mao direita */
+#pessoa-enforcada .mao-direita-dedo1 {
+position: relative;
+top: -263.5px;
+left: -15.5px;
+transform: rotate(-23.5deg);
+transform-origin: bottom right;
+width: 3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo2 {
+position: relative;
+top: -274px;
+left: -20.8px;
+width: 2.5px;
+height: 15px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo3 {
+position: relative;
+top: -286.1px;
+left: -24.3px;
+width: 2.5px;
+height: 14px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo4 {
+position: relative;
+top: -298px;
+left: -28px;
+width: 2.5px;
+height: 11px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo5 {
+position: relative;
+top: -313px;
+left: -31.4px;
+width: 2.3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */
+#pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita {
+position: relative;
+width: 15px;
+height: 50px;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna direita embaixo do tronco */
+#pessoa-enforcada .perna-esquerda {
+top: -311px;
+left: 10px;
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-esquerdo {
+position: relative;
+top: -317px;
+right: -10px;
+width: 16px;
+height: 8px;
+background-color: black;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna esquerda embaixo do tronco */
+#pessoa-enforcada .perna-direita {
+top: -379px;
+left: -10px;
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-direito {
+position: relative;
+top: -385px;
+left: -10px;
+width: 16px;
+height: 8px;
+background-color: black;
+border-radius: 10px;
+}
+
+/O bloco abaixo ajusta a posição dos textos/
+#estado-jogo, #tentativas-restantes, #letras-incorretas {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#estado-jogo {
+top: 300px;
+margin-bottom: 5px;
+font-size: 34px;
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+font-size: 24px;
+text-align: center;
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#tentativas-restantes {
+top: 350px;
+margin-bottom: 5px;
+font-size: 22px;
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);/
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#letras-incorretas {
+top: 380px;
+margin-bottom: 5px;
+font-size: 28px;
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#entrada-letra {
+position: absolute;
+top: 420px;
+left: 44.5%;
+transform: translateX(-50%);
+min-width: 5px;
+max-width: 12px;
+margin-top: 10px;
+padding: 5px;
+font-size: 16px;
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#verificar-letra {
+position: absolute;
+top: 420px;
+left: 51.7%;
+transform: translateX(-50%);
+margin-top: 10px;
+padding: 5px 10px; padding: 5px 10px;
+font-size: 16px;
+cursor: pointer;
+}
+
+/* O bloco abaixo define a cor de fundo do botão e quando o botão e pressionado */
+#verificar-letra:active {
+color: white;
+background-color: blue;
+}
+
+Para garantir que o design funcione bem em navegadores de celular, precisamos incorporar práticas de design responsivo utilizando media queries e ajustar alguns estilos para melhorar a visualização em telas menores.
+
+Vou fazer algumas alterações no seu código CSS para torná-lo mais responsivo:
+
+Adicionar Media Queries: Para ajustar os estilos em diferentes tamanhos de tela.
+
+Ajustar tamanhos e posições: Para garantir que os elementos se ajustem corretamente em telas menores.
+
+Melhorar a legibilidade e a usabilidade: Fazendo ajustes no layout e no tamanho das fontes.
+
+CSS (styles.css)
+
+/* Estilos globais */ * { margin: 0; padding: 0; box-sizing: border-box; } body { background-image: url('fundo.png'); margin: 20px; font-family: 'Oswald', sans-serif; font-weight: bold; font-style: italic; text-align: center; background-size: cover; background-attachment: fixed; } /* Estilos do título */ h1 { font-size: 72px; color: #09e95f; font-weight: bold; font-style: italic; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); text-align: center; margin: 20px; background: linear-gradient( var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2 ); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: spin 2.5s linear infinite; } @keyframes spin { 0% { --rotate: 0deg; } 100% { --rotate: 360deg; } } /* Estilos do enforcado */ #pessoa-enforcada { display: flex; flex-direction: column; align-items: center; margin-top: 20px; font-size: 24px; color: black; } .cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda { margin: 5px; background-color: black; } #pessoa-enforcada .cabeca { position: relative; width: 40px; height: 40px; border-radius: 50%; } #pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito { position: absolute; width: 5px; height: 5px; background-color: white; border-radius: 50%; } #pessoa-enforcada .cabeca-olho-esquerdo { top: 8px; left: 8px; } #pessoa-enforcada .cabeca-olho-direito { top: 8px; right: 8px; } #pessoa-enforcada .nariz { position: absolute; top: 20px; left: 17.5px; width: 5px; height: 10px; background-color: white; border-radius: 10px; } #pessoa-enforcada .boca { position: absolute; top: 30px; left: 10px; width: 20px; height: 5px; background-color: white; border-radius: 0 0 50px 50px; } #pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita { position: absolute; width: 7px; height: 13px; background-color: black; border-radius: 50%; } #pessoa-enforcada .cabeca-orelha-esquerda { top: 15px; left: -7px; } #pessoa-enforcada .cabeca-orelha-direita { top: 15px; right: -7px; } #pessoa-enforcada .cabelo { position: absolute; top: -8px; left: 0px; width: 34.5px; height: 8px; background-color: black; border-radius: 50px 50px 0 0; } #pessoa-enforcada .tronco { position: relative; top: -70px; width: 30px; height: 60px; border-radius: 20px; } #pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito { position: relative; width: 15px; height: 40px; border-radius: 10px; } #pessoa-enforcada .braco-esquerdo { top: -135px; right: -25px; } #pessoa-enforcada .braco-direito { top: -249px; left: -25px; } #pessoa-enforcada .mao-esquerda-dedo1, .mao-esquerda-dedo2, .mao-esquerda-dedo3, .mao-esquerda-dedo4, .mao-esquerda-dedo5, #pessoa-enforcada .mao-direita-dedo1, .mao-direita-dedo2, .mao-direita-dedo3, .mao-direita-dedo4, .mao-direita-dedo5 { position: absolute; width: 3px; height: 12px; background-color: black; border-radius: 10px; } #pessoa-enforcada .mao-esquerda-dedo1 { top: -14px; right: -15.5px; transform: rotate(20deg); transform-origin: bottom right; } #pessoa-enforcada .mao-esquerda-dedo2 { top: -25px; right: -21px; } #pessoa-enforcada .mao-esquerda-dedo3 { top: -37px; right: -24.5px; } #pessoa-enforcada .mao-esquerda-dedo4 { top: -49px; right: -28px; } #pessoa-enforcada .mao-esquerda-dedo5 { top: -64px; right: -31.4px; } #pessoa-enforcada .mao-direita-dedo1 { top: -14px; left: -15.5px; transform: rotate(-23.5deg); transform-origin: bottom right; } #pessoa-enforcada .mao-direita-dedo2 { top: -25px; left: -20.8px; } #pessoa-enforcada .mao-direita-dedo3 { top: -37px; left: -24.3px; } #pessoa-enforcada .mao-direita-dedo4 { top: -49px; left: -28px; } #pessoa-enforcada .mao-direita-dedo5 { top: -64px; left: -31.4px; } #pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita { position: relative; width: 15px; height: 50px; border-radius: 10px; } #pessoa-enforcada .perna-esquerda { top: -311px; left: 10px; } #pessoa-enforcada .perna-direita { top: -379px; left: -10px; } #pessoa-enforcada .sapato-esquerdo, #pessoa-enforcada .sapato-direito { position: relative; width: 16px; height: 8px; background-color: black; border-radius: 10px; } #pessoa-enforcada .sapato-esquerdo { top: -317px; right: -10px; } #pessoa-enforcada .sapato-direito { top: -385px; left: -10px; } /* Ajuste de posição dos textos */ #estado-jogo, #tentativas-restantes, #letras-incorretas { position: absolute; left: 50%; transform: translateX(-50%); text-align: center; } #estado-jogo { top: 300px; margin-bottom: 5px; font-size: 34px; color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); } #tentativas-restantes { top: 350px; margin-bottom: 5px; font-size: 22px; color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); } #letras-incorretas { top: 380px; margin-bottom: 5px; font-size: 28px; color: rgb 
+
+Parou de escrever o código, pode continuar de onde parou
+
+Claro! Vamos continuar de onde paramos:
+
+CSS (styles.css)
+
+#letras-incorretas { top: 380px; margin-bottom: 5px; font-size: 28px; color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); } #entrada-letra { position: absolute; top: 420px; left: 44.5%; transform: translateX(-50%); min-width: 5px; max-width: 12px; margin-top: 10px; padding: 5px; font-size: 16px; } #verificar-letra { position: absolute; top: 420px; left: 51.7%; transform: translateX(-50%); margin-top: 10px; padding: 5px 10px; font-size: 16px; cursor: pointer; } #verificar-letra:active { color: white; background-color: blue; } /* Media Queries para dispositivos móveis */ @media (max-width: 768px) { h1 { font-size: 48px; margin: 10px; } #pessoa-enforcada { font-size: 18px; } #estado-jogo { top: 200px; font-size: 28px; } #tentativas-restantes { top: 250px; font-size: 18px; } #letras-incorretas { top: 280px; font-size: 24px; } #entrada-letra { top: 320px; left: 40%; min-width: 4px; max-width: 10px; font-size: 14px; } #verificar-letra { top: 320px; left: 60%; font-size: 14px; } } @media (max-width: 480px) { h1 { font-size: 36px; } #estado-jogo { top: 150px; font-size: 24px; } #tentativas-restantes { top: 200px; font-size: 16px; } #letras-incorretas { top: 230px; font-size: 20px; } #entrada-letra { top: 270px; left: 35%; font-size: 12px; } #verificar-letra { top: 270px; left: 65%; font-size: 12px; } } 
+
+Explicação das alterações:
+
+Media Queries:
+
+Definimos duas media queries para telas com largura máxima de 768px e 480px.
+
+Ajustamos os tamanhos das fontes, margens e posições dos elementos para garantir que o layout se adapte bem em telas menores.
+
+Ajustes Específicos de Elementos:
+
+Título (h1): Reduzimos o tamanho da fonte e a margem.
+
+Pessoa Enforcada: Ajustamos o tamanho da fonte para manter a proporção.
+
+Textos do Jogo: Ajustamos as posições e tamanhos das fontes para #estado-jogo, #tentativas-restantes e #letras-incorretas.
+
+Entrada de Letra e Botão: Ajustamos as posições e tamanhos para #entrada-letra e #verificar-letra.
+
+Essas alterações devem garantir que o layout do seu jogo de enforcado se adapte bem a diferentes tamanhos de tela, proporcionando uma experiência de usuário melhor em dispositivos móveis. Certifique-se de testar o design em vários dispositivos para verificar se os ajustes funcionam conforme esperado.
+
+Model B
+
+Pode continuar
+
+Claro! Sobre o que você gostaria que eu continuasse? Se tiver um tema específico em mente ou se precisar de ajuda com um texto, basta me informar.
+
+Você estava acrescentando algumas alterações no código lhe fornecido para que ele funcionasse bem no navegador do celular
+
+Claro! Se você puder me fornecer o código original ou detalhes sobre o que você gostaria de alterar para que funcione melhor em navegadores de celular, ficarei feliz em ajudar. Vou sugerir algumas práticas comuns para otimizar websites para dispositivos móveis. Aqui estão alguns pontos a considerar:
+
+1. Viewport Meta Tag
+
+Adicione a tag viewport no <head> do seu HTML. Isso ajuda a garantir que o layout se ajuste corretamente à largura da tela do dispositivo.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+2. CSS Responsivo
+
+Use CSS media queries para ajustar o estilo do seu site em diferentes tamanhos de tela. Aqui está um exemplo básico:
+
+/* Estilos gerais */ body { font-family: Arial, sans-serif; margin: 0; padding: 0; } /* Estilos para telas pequenas */ @media (max-width: 600px) { body { font-size: 14px; } .container { padding: 10px; } .menu { flex-direction: column; /* Muda o menu para coluna em telas pequenas */ } } /* Estilos para telas maiores */ @media (min-width: 601px) { body { font-size: 16px; } .container { padding: 20px; } .menu { flex-direction: row; /* Mantém o menu em linha em telas maiores */ } } 
+
+3. Imagens Responsivas
+
+Use imagens que se adaptam ao tamanho da tela. Você pode definir a largura das imagens como 100% para que elas se ajustem ao contêiner.
+
+img { max-width: 100%; height: auto; /* Mantém a proporção da imagem */ } 
+
+4. Botões e Links
+
+Certifique-se de que os botões e links sejam grandes o suficiente para serem clicados facilmente em telas sensíveis ao toque. Um bom tamanho é de pelo menos 48x48 pixels.
+
+.button { padding: 10px 20px; font-size: 16px; cursor: pointer; } 
+
+5. Evitar o Uso Excessivo de Elementos Flutuantes
+
+Em vez de usar float para layout, considere usar Flexbox ou Grid, que oferecem mais controle e são mais amigáveis para layouts responsivos.
+
+.container { display: flex; flex-wrap: wrap; /* Permite que os itens quebrem em uma nova linha quando necessário */ } 
+
+6. Teste em Diferentes Dispositivos
+
+É essencial testar seu site em vários dispositivos e navegadores para garantir que ele funcione bem em todos eles. Ferramentas como o Chrome DevTools oferecem opções para simular diferentes dispositivos.
+
+7. Desempenho e Carregamento Rápido
+
+Minimize o uso de scripts pesados e otimize imagens para que o site carregue rapidamente. O Google PageSpeed Insights pode ajudar a identificar problemas de desempenho.
+
+Exemplo Completo
+
+Aqui está um exemplo básico de um HTML com essas práticas:
+
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Exemplo Responsivo</title> <style> body { font-family: Arial, sans-serif; margin: 0; padding: 0; } .container { padding: 20px; display: flex; flex-wrap: wrap; } .menu { display: flex; justify-content: space-between; width: 100%; } .button { padding: 10px 20px; font-size: 16px; cursor: pointer; } img { max-width: 100%; height: auto; } @media (max-width: 600px) { body { font-size: 14px; } .menu { flex-direction: column; } } </style> </head> <body> <div class="container"> <div class="menu"> <a href="#" class="button">Home</a> <a href="#" class="button">Sobre</a> <a href="#" class="button">Contato</a> </div> <img src="imagem-exemplo.jpg" alt="Exemplo"> <p>Bem-vindo ao nosso site responsivo!</p> </div> </body> </html> 
+
+Conclusão
+
+Essas são algumas dicas e um exemplo básico para ajudá-lo a otimizar seu código para funcionar bem em navegadores de celular. Se você tiver um código específico que gostaria de ajustar, fique à vontade para compartilhá-lo, e eu poderei ajudar com alterações mais direcionadas!
+
+/* O bloco abaixo define a cor do título do jogo */
+h1 {
+font-size: 72px;
+color: #09e95f;
+font-weight: bold;
+font-style: italic;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+text-align: center;
+margin: 20px;
+background: linear-gradient(
+var(--rotate),
+#5ddcff, #3c67e3 43%, #4e00c2
+);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+0% {
+--rotate: 0deg;
+}
+100% {
+--rotate: 360deg;
+}
+}
+
+/* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
+body {
+background-image: url('fundo.png');
+margin: 20px;
+font-family: 'Oswald', sans-serif;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+background-size: cover;
+background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* O bloco abaixo cria as partes do enforcado */
+#pessoa-enforcada {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+font-size: 24px;
+color: black;
+}
+
+/* O bloco abaixo insere a cor preta no corpo do enforcado */
+.cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda {
+margin: 5px;
+background-color: black;
+}
+
+/* O bloco abaixo adiciona o tamanho da cabeça */
+#pessoa-enforcada .cabeca {
+position: relative;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+/* Os blocos abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+position: relative;
+width: 5px;
+height: 5px;
+background-color: white;
+border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+top: -31.5px;
+left: 8px;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+top: -36.5px;
+right: 8px;
+}
+
+#pessoa-enforcada .nariz {
+position: relative;
+top: -40px;
+left: -10x;
+width: 5px;
+height: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+position: relative;
+top: -71px;
+left: 0px;
+width: 20px;
+height: 5px;
+background-color: white;
+border-radius: 0 0 50px 50px;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+position: relative;
+width: 7px;
+height: 13px;
+background-color: black;
+border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+top: -51.5px;
+left: 20px;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+top: -65px;
+right: 20px;
+}
+
+*#pessoa-enforcada .cabelo {
+position: relative;
+top: -91px;
+left: 0px;
+width: 34.5px;
+height: 8px;
+background-color: black;
+border-radius: 50px 50px 0 0px;
+}
+
+/* O bloco abaixo adiciona o tamanho do tronco */
+#pessoa-enforcada .tronco {
+position: relative;
+top: -70px;
+width: 30px;
+height: 60px;
+border-radius: 20px;
+}
+
+/* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */
+#pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito {
+position: relative;
+width: 15px;
+height: 40px;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço direito à direita do tronco */
+#pessoa-enforcada .braco-esquerdo {
+top: -135px;
+right: -25px;
+}
+
+/* Os blocos abaixo adiciona os dedos da mao esquerda */
+#pessoa-enforcada .mao-esquerda-dedo1 {
+position: relative;
+top: -149px;
+right: -15.5px;
+width: 3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+transform: rotate(20deg);
+transform-origin: bottom right;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo2 {
+position: relative;
+top: -160px;
+right: -21px;
+width: 2.5px;
+height: 15px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo3 {
+position: relative;
+top: -172px;
+right: -24.5px;
+width: 2.5px;
+height: 14px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo4 {
+position: relative;
+top: -184px;
+right: -28px;
+width: 2.5px;
+height: 11px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo5 {
+position: relative;
+top: -199px;
+right: -31.4px;
+width: 2.3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço esquerdo à esquerda do tronco */
+#pessoa-enforcada .braco-direito {
+top: -249px;
+left: -25px;
+}
+
+/* Os blocos abaixo adiciona os dedos da mao direita */
+#pessoa-enforcada .mao-direita-dedo1 {
+position: relative;
+top: -263.5px;
+left: -15.5px;
+transform: rotate(-23.5deg);
+transform-origin: bottom right;
+width: 3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo2 {
+position: relative;
+top: -274px;
+left: -20.8px;
+width: 2.5px;
+height: 15px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo3 {
+position: relative;
+top: -286.1px;
+left: -24.3px;
+width: 2.5px;
+height: 14px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo4 {
+position: relative;
+top: -298px;
+left: -28px;
+width: 2.5px;
+height: 11px;
+background-color: black;
+border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo5 {
+position: relative;
+top: -313px;
+left: -31.4px;
+width: 2.3px;
+height: 12px;
+background-color: black;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */
+#pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita {
+position: relative;
+width: 15px;
+height: 50px;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna direita embaixo do tronco */
+#pessoa-enforcada .perna-esquerda {
+top: -311px;
+left: 10px;
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-esquerdo {
+position: relative;
+top: -317px;
+right: -10px;
+width: 16px;
+height: 8px;
+background-color: black;
+border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna esquerda embaixo do tronco */
+#pessoa-enforcada .perna-direita {
+top: -379px;
+left: -10px;
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-direito {
+position: relative;
+top: -385px;
+left: -10px;
+width: 16px;
+height: 8px;
+background-color: black;
+border-radius: 10px;
+}
+
+/O bloco abaixo ajusta a posição dos textos/
+#estado-jogo, #tentativas-restantes, #letras-incorretas {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#estado-jogo {
+top: 300px;
+margin-bottom: 5px;
+font-size: 34px;
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+font-size: 24px;
+text-align: center;
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#tentativas-restantes {
+top: 350px;
+margin-bottom: 5px;
+font-size: 22px;
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);/
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#letras-incorretas {
+top: 380px;
+margin-bottom: 5px;
+font-size: 28px;
+color: rgb(0, 0, 0);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#entrada-letra {
+position: absolute;
+top: 420px;
+left: 44.5%;
+transform: translateX(-50%);
+min-width: 5px;
+max-width: 12px;
+margin-top: 10px;
+padding: 5px;
+font-size: 16px;
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#verificar-letra {
+position: absolute;
+top: 420px;
+left: 51.7%;
+transform: translateX(-50%);
+margin-top: 10px;
+padding: 5px 10px; padding: 5px 10px;
+font-size: 16px;
+cursor: pointer;
+}
+
+/* O bloco abaixo define a cor de fundo do botão e quando o botão e pressionado */
+#verificar-letra:active {
+color: white;
+background-color: blue;
+}
+
+Para otimizar o código CSS que você forneceu de modo que funcione bem em navegadores de dispositivos móveis, precisamos garantir que o layout seja responsivo e que os elementos se ajustem às diferentes larguras de tela. Vou sugerir algumas melhorias e alterações importantes:
+
+Alterações e Melhorias
+
+Adicione a Tag Viewport: Certifique-se de que sua página HTML inclua a tag viewport, como mencionado anteriormente, para garantir que o conteúdo se ajuste à tela do dispositivo.
+
+Media Queries: Adicione media queries para ajustar o layout e o tamanho da fonte em telas menores.
+
+Unidades Responsivas: Utilize unidades responsivas como %, vw, vh e rem em vez de unidades fixas como px para garantir que o layout se adapte a diferentes tamanhos de tela.
+
+Ajustes no Layout: Ajuste a posição e o tamanho de elementos para que eles não fiquem muito próximos das bordas da tela em dispositivos menores.
+
+Acessibilidade: Certifique-se de que elementos interativos, como botões, tenham um tamanho mínimo para facilitar o toque.
+
+Exemplo de CSS Atualizado
+
+Aqui está uma versão ajustada do seu CSS com as melhorias mencionadas:
+
+/* O bloco abaixo define a cor do título do jogo */ h1 { font-size: 6vw; /* Usar unidade responsiva */ color: #09e95f; font-weight: bold; font-style: italic; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); text-align: center; margin: 20px; background: linear-gradient( var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2 ); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: spin 2.5s linear infinite; } @keyframes spin { 0% { --rotate: 0deg; } 100% { --rotate: 360deg; } } /* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/ body { background-image: url('fundo.png'); margin: 0; /* Remover margem para evitar sobra */ font-family: 'Oswald', sans-serif; font-weight: bold; font-style: italic; text-align: center; background-size: cover; background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */ } /* O bloco abaixo cria as partes do enforcado */ #pessoa-enforcada { display: flex; flex-direction: column; align-items: center; margin-top: 20px; font-size: 2.5vw; /* Usar unidade responsiva */ color: black; } /* O bloco abaixo insere a cor preta no corpo do enforcado */ .cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda { margin: 5px; background-color: black; } /* O bloco abaixo adiciona o tamanho da cabeça */ #pessoa-enforcada .cabeca { position: relative; width: 10vw; /* Usar unidade responsiva */ height: 10vw; /* Usar unidade responsiva */ border-radius: 50%; } /* Os blocos abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */ #pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito { position: relative; width: 1.5vw; /* Usar unidade responsiva */ height: 1.5vw; /* Usar unidade responsiva */ background-color: white; border-radius: 50%; } #pessoa-enforcada .cabeca-olho-esquerdo { top: -31.5%; left: 8%; } #pessoa-enforcada .cabeca-olho-direito { top: -36.5%; right: 8%; } #pessoa-enforcada .nariz { position: relative; top: -40%; left: -10%; width: 1.5vw; height: 3vw; background-color: white; border-radius: 10px; } #pessoa-enforcada .boca { position: relative; top: -71%; left: 0; width: 5vw; height: 1.5vw; background-color: white; border-radius: 0 0 50px 50px; } #pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita { position: relative; width: 2vw; height: 3vw; background-color: black; border-radius: 50%; } #pessoa-enforcada .cabeca-orelha-esquerda { top: -51.5%; left: 20%; } #pessoa-enforcada .cabeca-orelha-direita { top: -65%; right: 20%; } #pessoa-enforcada .cabelo { position: relative; top: -91%; left: 0; width: 7vw; height: 1.5vw; background-color: black; border-radius: 50px 50px 0 0; } /* O bloco abaixo adiciona o tamanho do tronco */ #pessoa-enforcada .tronco { position: relative; top: -70%; width: 5vw; height: 15vw; border-radius: 20px; } /* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */ #pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito { position: relative; width: 3vw; height: 10vw; border-radius: 10px; } /* O bloco abaixo adiciona o posicionamento do braço direito à direita do tronco */ #pessoa-enforcada .braco-esquerdo { top: -135%; right: -10%; } /* Os blocos abaixo adiciona os dedos da mão esquerda */ #pessoa-enforcada .mao-esquerda-dedo1, #pessoa-enforcada .mao-esquerda-dedo2, #pessoa-enforcada .mao-esquerda-dedo3, #pessoa-enforcada .mao-esquerda-dedo4, #pessoa-enforcada .mao-esquerda-dedo5 { position: relative; width: 1vw; height: 4vw; background-color: black; border-radius: 10px; } #pessoa-enforcada .mao-esquerda-dedo1 { top: -149%; right: -15.5%; transform: rotate(20deg); transform-origin: bottom right; } #pessoa-enforcada .mao-esquerda-dedo2 { top: -160%; right: -21%; } #pessoa-enforcada .mao-esquerda-dedo3 { top: -172%; right: -24.5%; } #pessoa-enforcada .mao-esquerda-dedo4 { top: -184%; right: -28%; } #pessoa-enforcada .mao-esquerda-dedo5 { top: -199%; right: -31.4%; } /* O bloco abaixo adiciona o posicionamento do braço esquerdo à esquerda do tronco */ #pessoa-enforcada .braco-direito { top: -249%; left: -10%; } /* Os blocos abaixo adiciona os dedos da mão direita */ #pessoa-enforcada .mao-direita-dedo1, #pessoa-enforcada .mao-direita-dedo2, #pessoa-enforcada .mao-direita-dedo3, #pessoa-enforcada .mao-direita-dedo4, #pessoa-enforcada .mao-direita-dedo5 { position: relative; width: 1vw; height: 4vw; background-color: black; border-radius: 10px; } #pessoa-enforcada .mao-direita-dedo1 { top: -263.5%; left: -15.5%; transform: rotate(-23.5deg); transform-origin: bottom right; } #pessoa-enforcada .mao-direita-dedo2 { top: -274%; left: -20.8%; } #pessoa-enforcada .mao-direita-dedo3 { top: -286.1%; left: -24.3%; } #pessoa-enforcada .mao-direita-dedo4 { top: -298%; left: -28%; } #pessoa-enforcada .mao-direita-dedo5 { top: -313%; left: -31.4%; } /* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */ #pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita { position: relative 
+
+Parou de escrever o código, pode continuar de onde parou
+
+Claro! Vou continuar de onde parei na definição das classes para as pernas e sapatos da figura do enforcado, além de incluir as media queries para garantir a responsividade do código. Aqui está a continuação e finalização do CSS:
+
+/* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */ #pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita { position: relative; width: 3vw; /* Usar unidade responsiva */ height: 10vw; /* Usar unidade responsiva */ border-radius: 10px; } /* O bloco abaixo adiciona o posicionamento da perna esquerda embaixo do tronco */ #pessoa-enforcada .perna-esquerda { top: -311%; left: 5%; /* Ajuste para centralizar melhor */ } /* O bloco abaixo adiciona o sapato da perna esquerda */ #pessoa-enforcada .sapato-esquerdo { position: relative; top: -5%; /* Ajuste para alinhar com a perna */ right: -10%; width: 4vw; /* Usar unidade responsiva */ height: 2vw; /* Usar unidade responsiva */ background-color: black; border-radius: 10px; } /* O bloco abaixo adiciona o posicionamento da perna direita embaixo do tronco */ #pessoa-enforcada .perna-direita { top: -379%; left: 5%; /* Ajuste para centralizar melhor */ } /* O bloco abaixo adiciona o sapato da perna direita */ #pessoa-enforcada .sapato-direito { position: relative; top: -5%; /* Ajuste para alinhar com a perna */ left: -10%; width: 4vw; /* Usar unidade responsiva */ height: 2vw; /* Usar unidade responsiva */ background-color: black; border-radius: 10px; } /* O bloco abaixo ajusta a posição dos textos */ #estado-jogo, #tentativas-restantes, #letras-incorretas { position: absolute; left: 50%; transform: translateX(-50%); } /* O bloco abaixo define o tamanho da fonte e a sua posição */ #estado-jogo { top: 300px; margin-bottom: 5px; font-size: 4vw; /* Usar unidade responsiva */ color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); text-align: center; } /* O bloco abaixo define o tamanho da fonte e a sua posição */ #tentativas-restantes { top: 350px; margin-bottom: 5px; font-size: 3.5vw; /* Usar unidade responsiva */ color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); } /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */ #letras-incorretas { top: 380px; margin-bottom: 5px; font-size: 3.5vw; /* Usar unidade responsiva */ color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); } /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */ #entrada-letra { position: absolute; top: 420px; left: 50%; transform: translateX(-50%); min-width: 5px; max-width: 12px; margin-top: 10px; padding: 5px; font-size: 2vw; /* Usar unidade responsiva */ } /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */ #verificar-letra { position: absolute; top: 420px; left: 55%; /* Ajuste para melhor posicionamento */ transform: translateX(-50%); margin-top: 10px; padding: 5px 10px; font-size: 2vw; /* Usar unidade responsiva */ cursor: pointer; } /* O bloco abaixo define a cor de fundo do botão e quando o botão é pressionado */ #verificar-letra:active { color: white; background-color: blue; } /* Media Queries para responsividade */ @media (max-width: 600px) { h1 { font-size: 50px; /* Ajuste para dispositivos pequenos */ } #estado-jogo, #tentativas-restantes, #letras-incorretas { font-size: 20px; /* Ajuste para dispositivos pequenos */ } #entrada-letra, #verificar-letra { font-size: 12px; /* Ajuste para dispositivos pequenos */ } } 
+
+Explicação das Alterações:
+
+Unidades Responsivas: Para garantir que o layout se ajuste ao tamanho da tela, utilizei vw (viewport width) e vh (viewport height) em vez de px. Isso faz com que o tamanho dos elementos se ajuste proporcionalmente ao tamanho da tela.
+
+Posicionamento: Ajustei as posições de alguns elementos para que eles se centralizem melhor e não fiquem muito próximos das bordas, especialmente em telas menores.
+
+Media Queries: Adicionei uma media query que ajusta os tamanhos de fonte e outras propriedades em telas menores que 600px. Isso ajuda a garantir que o conteúdo permaneça legível e utilizável em dispositivos móveis.
+
+Propriedades de Estilo: Usei text-shadow e outras propriedades para manter a legibilidade e o apelo visual.
+
+Conclusão
+
+Com essas alterações, seu CSS deve se comportar de forma muito mais responsiva e amigável em dispositivos móveis. Se você tiver mais alguma dúvida ou precisar de mais ajustes, sinta-se à vontade para perguntar!
+
+👈 A is better👉 B is better🤝 Tie👎 Both are bad
+
+Textbox
+
+Send
+
+🔮 Random Image🎲 New Round🔄 Regenerate📷 Share
+
+Terms of Service
+
+Users are required to agree to the following terms before using the service:
+
+The service is a research preview. It only provides limited safety measures and may generate offensive content. It must not be used for any illegal, harmful, violent, racist, or sexual purposes. Please do not upload any private information. The service collects user dialogue data, including both text and images, and reserves the right to distribute it under a Creative Commons Attribution (CC-BY) or a similar license.
+
+Please report any bug or issue to our Discord/arena-feedback.
+
+Acknowledgment
+
+We thank UC Berkeley SkyLab, Kaggle, MBZUAI, a16z, Together AI, Hyperbolic, RunPod, Anyscale, HuggingFace for their generous sponsorship.
+
+￼￼￼￼￼￼￼￼￼
+
+Construído com gradio￼
+
+
+Claro! Vamos continuar de onde paramos:
+
+### CSS (styles.css)
+
+```css
+#letras-incorretas {
+  top: 380px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+#entrada-letra {
+  position: absolute;
+  top: 420px;
+  left: 44.5%;
+  transform: translateX(-50%);
+  min-width: 5px;
+  max-width: 12px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#verificar-letra {
+  position: absolute;
+  top: 420px;
+  left: 51.7%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#verificar-letra:active {
+  color: white;
+  background-color: blue;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    margin: 10px;
+  }
+
+  #pessoa-enforcada {
+    font-size: 18px;
+  }
+
+  #estado-jogo {
+    top: 200px;
+    font-size: 28px;
+  }
+
+  #tentativas-restantes {
+    top: 250px;
+    font-size: 18px;
+  }
+
+  #letras-incorretas {
+    top: 280px;
+    font-size: 24px;
+  }
+
+  #entrada-letra {
+    top: 320px;
+    left: 40%;
+    min-width: 4px;
+    max-width: 10px;
+    font-size: 14px;
+  }
+
+  #verificar-letra {
+    top: 320px;
+    left: 60%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  #estado-jogo {
+    top: 150px;
+    font-size: 24px;
+  }
+
+  #tentativas-restantes {
+    top: 200px;
+    font-size: 16px;
+  }
+
+  #letras-incorretas {
+    top: 230px;
+    font-size: 20px;
+  }
+
+  #entrada-letra {
+    top: 270px;
+    left: 35%;
+    font-size: 12px;
+  }
+
+  #verificar-letra {
+    top: 270px;
+    left: 65%;
+    font-size: 12px;
+  }
+}
+```
+
+### Explicação das alterações:
+
+1. **Media Queries**:
+   - Definimos duas media queries para telas com largura máxima de 768px e 480px.
+   - Ajustamos os tamanhos das fontes, margens e posições dos elementos para garantir que o layout se adapte bem em telas menores.
+
+2. **Ajustes Específicos de Elementos**:
+   - **Título (h1)**: Reduzimos o tamanho da fonte e a margem.
+   - **Pessoa Enforcada**: Ajustamos o tamanho da fonte para manter a proporção.
+   - **Textos do Jogo**: Ajustamos as posições e tamanhos das fontes para `#estado-jogo`, `#tentativas-restantes` e `#letras-incorretas`.
+   - **Entrada de Letra e Botão**: Ajustamos as posições e tamanhos para `#entrada-letra` e `#verificar-letra`.
+
+Essas alterações devem garantir que o layout do seu jogo de enforcado se adapte bem a diferentes tamanhos de tela, proporcionando uma experiência de usuário melhor em dispositivos móveis. Certifique-se de testar o design em vários dispositivos para verificar se os ajustes funcionam conforme esperado.
+-------------
+
+Para otimizar o código CSS que você forneceu de modo que funcione bem em navegadores de dispositivos móveis, precisamos garantir que o layout seja responsivo e que os elementos se ajustem às diferentes larguras de tela. Vou sugerir algumas melhorias e alterações importantes:
+
+### Alterações e Melhorias
+
+1. **Adicione a Tag Viewport**: Certifique-se de que sua página HTML inclua a tag viewport, como mencionado anteriormente, para garantir que o conteúdo se ajuste à tela do dispositivo.
+
+2. **Media Queries**: Adicione media queries para ajustar o layout e o tamanho da fonte em telas menores.
+
+3. **Unidades Responsivas**: Utilize unidades responsivas como `%`, `vw`, `vh` e `rem` em vez de unidades fixas como `px` para garantir que o layout se adapte a diferentes tamanhos de tela.
+
+4. **Ajustes no Layout**: Ajuste a posição e o tamanho de elementos para que eles não fiquem muito próximos das bordas da tela em dispositivos menores.
+
+5. **Acessibilidade**: Certifique-se de que elementos interativos, como botões, tenham um tamanho mínimo para facilitar o toque.
+
+### Exemplo de CSS Atualizado
+
+Aqui está uma versão ajustada do seu CSS com as melhorias mencionadas:
+
+```css
+/* O bloco abaixo define a cor do título do jogo */
+h1 {
+  font-size: 6vw; /* Usar unidade responsiva */
+  color: #09e95f;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+  background: linear-gradient(
+      var(--rotate),
+      #5ddcff, #3c67e3 43%, #4e00c2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      --rotate: 0deg;
+  }
+  100% {
+      --rotate: 360deg;
+  }
+}
+
+/* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
+body { 
+  background-image: url('fundo.png');
+  margin: 0; /* Remover margem para evitar sobra */
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+/* O bloco abaixo cria as partes do enforcado */
+#pessoa-enforcada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 2.5vw; /* Usar unidade responsiva */
+  color: black;
+}
+
+/* O bloco abaixo insere a cor preta no corpo do enforcado */
+.cabeca, .tronco, .braco-esquerdo, .braco-direito, .perna-direita, .perna-esquerda {
+  margin: 5px;
+  background-color: black;
+}
+
+/* O bloco abaixo adiciona o tamanho da cabeça */
+#pessoa-enforcada .cabeca {
+  position: relative;
+  width: 10vw; /* Usar unidade responsiva */
+  height: 10vw; /* Usar unidade responsiva */
+  border-radius: 50%;
+}
+
+/* Os blocos abaixo adiciona os detalhes da cabeça (olhos, nariz, boca, orelhas e cabelo) */
+#pessoa-enforcada .cabeca-olho-esquerdo, .cabeca-olho-direito {
+  position: relative;
+  width: 1.5vw; /* Usar unidade responsiva */
+  height: 1.5vw; /* Usar unidade responsiva */
+  background-color: white;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-olho-esquerdo {
+  top: -31.5%;
+  left: 8%;
+}
+
+#pessoa-enforcada .cabeca-olho-direito {
+  top: -36.5%;
+  right: 8%;
+}
+
+#pessoa-enforcada .nariz {
+  position: relative;
+  top: -40%;
+  left: -10%;
+  width: 1.5vw;
+  height: 3vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .boca {
+  position: relative;
+  top: -71%;
+  left: 0;
+  width: 5vw;
+  height: 1.5vw;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda, .cabeca-orelha-direita {
+  position: relative;
+  width: 2vw;
+  height: 3vw;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pessoa-enforcada .cabeca-orelha-esquerda {
+  top: -51.5%;
+  left: 20%;
+}
+
+#pessoa-enforcada .cabeca-orelha-direita {
+  top: -65%;
+  right: 20%;
+}
+
+#pessoa-enforcada .cabelo {
+  position: relative;
+  top: -91%;
+  left: 0;
+  width: 7vw;
+  height: 1.5vw;
+  background-color: black;
+  border-radius: 50px 50px 0 0;
+}
+
+/* O bloco abaixo adiciona o tamanho do tronco */
+#pessoa-enforcada .tronco {
+  position: relative;
+  top: -70%;
+  width: 5vw;
+  height: 15vw;
+  border-radius: 20px;
+}
+
+/* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */
+#pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito {
+  position: relative;
+  width: 3vw;
+  height: 10vw;
+  border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço direito à direita do tronco */
+#pessoa-enforcada .braco-esquerdo {
+  top: -135%;
+  right: -10%;
+}
+
+/* Os blocos abaixo adiciona os dedos da mão esquerda */
+#pessoa-enforcada .mao-esquerda-dedo1,
+#pessoa-enforcada .mao-esquerda-dedo2,
+#pessoa-enforcada .mao-esquerda-dedo3,
+#pessoa-enforcada .mao-esquerda-dedo4,
+#pessoa-enforcada .mao-esquerda-dedo5 {
+  position: relative;
+  width: 1vw;
+  height: 4vw;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo1 {
+  top: -149%;
+  right: -15.5%;
+  transform: rotate(20deg);
+  transform-origin: bottom right;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo2 {
+  top: -160%;
+  right: -21%;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo3 {
+  top: -172%;
+  right: -24.5%;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo4 {
+  top: -184%;
+  right: -28%;
+}
+
+#pessoa-enforcada .mao-esquerda-dedo5 {
+  top: -199%;
+  right: -31.4%;
+}
+
+/* O bloco abaixo adiciona o posicionamento do braço esquerdo à esquerda do tronco */
+#pessoa-enforcada .braco-direito {
+  top: -249%;
+  left: -10%;
+}
+
+/* Os blocos abaixo adiciona os dedos da mão direita */
+#pessoa-enforcada .mao-direita-dedo1,
+#pessoa-enforcada .mao-direita-dedo2,
+#pessoa-enforcada .mao-direita-dedo3,
+#pessoa-enforcada .mao-direita-dedo4,
+#pessoa-enforcada .mao-direita-dedo5 {
+  position: relative;
+  width: 1vw;
+  height: 4vw;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#pessoa-enforcada .mao-direita-dedo1 {
+  top: -263.5%;
+  left: -15.5%;
+  transform: rotate(-23.5deg);
+  transform-origin: bottom right;
+}
+
+#pessoa-enforcada .mao-direita-dedo2 {
+  top: -274%;
+  left: -20.8%;
+}
+
+#pessoa-enforcada .mao-direita-dedo3 {
+  top: -286.1%;
+  left: -24.3%;
+}
+
+#pessoa-enforcada .mao-direita-dedo4 {
+  top: -298%;
+  left: -28%;
+}
+
+#pessoa-enforcada .mao-direita-dedo5 {
+  top: -313%;
+  left: -31.4%;
+}
+
+/* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */
+#pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita {
+  position: relative
+
+
+
+Claro! Vou continuar de onde parei na definição das classes para as pernas e sapatos da figura do enforcado, além de incluir as media queries para garantir a responsividade do código. Aqui está a continuação e finalização do CSS:
+
+```css
+/* O bloco abaixo adiciona o tamanho das pernas e arredonda as extremidades */
+#pessoa-enforcada .perna-esquerda, #pessoa-enforcada .perna-direita {
+  position: relative;
+  width: 3vw; /* Usar unidade responsiva */
+  height: 10vw; /* Usar unidade responsiva */
+  border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna esquerda embaixo do tronco */
+#pessoa-enforcada .perna-esquerda {
+  top: -311%;
+  left: 5%; /* Ajuste para centralizar melhor */
+}
+
+/* O bloco abaixo adiciona o sapato da perna esquerda */
+#pessoa-enforcada .sapato-esquerdo {
+  position: relative;
+  top: -5%; /* Ajuste para alinhar com a perna */
+  right: -10%;
+  width: 4vw; /* Usar unidade responsiva */
+  height: 2vw; /* Usar unidade responsiva */
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* O bloco abaixo adiciona o posicionamento da perna direita embaixo do tronco */
+#pessoa-enforcada .perna-direita {
+  top: -379%;
+  left: 5%; /* Ajuste para centralizar melhor */
+}
+
+/* O bloco abaixo adiciona o sapato da perna direita */
+#pessoa-enforcada .sapato-direito {
+  position: relative;
+  top: -5%; /* Ajuste para alinhar com a perna */
+  left: -10%;
+  width: 4vw; /* Usar unidade responsiva */
+  height: 2vw; /* Usar unidade responsiva */
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* O bloco abaixo ajusta a posição dos textos */
+#estado-jogo, #tentativas-restantes, #letras-incorretas {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#estado-jogo {
+  top: 300px;
+  margin-bottom: 5px;
+  font-size: 4vw; /* Usar unidade responsiva */
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* O bloco abaixo define o tamanho da fonte e a sua posição */
+#tentativas-restantes {
+  top: 350px;
+  margin-bottom: 5px;
+  font-size: 3.5vw; /* Usar unidade responsiva */
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#letras-incorretas {
+  top: 380px;
+  margin-bottom: 5px;
+  font-size: 3.5vw; /* Usar unidade responsiva */
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#entrada-letra {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 5px;
+  max-width: 12px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 2vw; /* Usar unidade responsiva */
+}
+
+/* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
+#verificar-letra {
+  position: absolute;
+  top: 420px;
+  left: 55%; /* Ajuste para melhor posicionamento */
+  transform: translateX(-50%);
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 2vw; /* Usar unidade responsiva */
+  cursor: pointer;
+}
+
+/* O bloco abaixo define a cor de fundo do botão e quando o botão é pressionado */
+#verificar-letra:active {
+  color: white;
+  background-color: blue;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 50px; /* Ajuste para dispositivos pequenos */
+  }
+
+  #estado-jogo, #tentativas-restantes, #letras-incorretas {
+    font-size: 20px; /* Ajuste para dispositivos pequenos */
+  }
+
+  #entrada-letra, #verificar-letra {
+    font-size: 12px; /* Ajuste para dispositivos pequenos */
+  }
+}
+```
+
+### Explicação das Alterações:
+
+1. **Unidades Responsivas**: Para garantir que o layout se ajuste ao tamanho da tela, utilizei `vw` (viewport width) e `vh` (viewport height) em vez de `px`. Isso faz com que o tamanho dos elementos se ajuste proporcionalmente ao tamanho da tela.
+
+2. **Posicionamento**: Ajustei as posições de alguns elementos para que eles se centralizem melhor e não fiquem muito próximos das bordas, especialmente em telas menores.
+
+3. **Media Queries**: Adicionei uma media query que ajusta os tamanhos de fonte e outras propriedades em telas menores que 600px. Isso ajuda a garantir que o conteúdo permaneça legível e utilizável em dispositivos móveis.
+
+4. **Propriedades de Estilo**: Usei `text-shadow` e outras propriedades para manter a legibilidade e o apelo visual.
+
+### Conclusão
+
+Com essas alterações, seu CSS deve se comportar de forma muito mais responsiva e amigável em dispositivos móveis. Se você tiver mais alguma dúvida ou precisar de mais ajustes, sinta-se à vontade para perguntar!

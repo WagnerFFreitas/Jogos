@@ -373,3 +373,73 @@ body {
   color: white;
   background-color: blue;
 }
+
+/*-------*/
+/* ... resto do código ... */
+
+@media only screen and (max-width: 480px) {
+  /* Ajuste tamanhos de fonte e margens para caber na tela menor */
+  h1 {
+    font-size: 36px;
+    margin: 10px;
+  }
+  
+  #pessoa-enforcada {
+    margin-top: 10px;
+  }
+  
+  #estado-jogo, #tentativas-restantes, #letras-incorretas {
+    font-size: 18px;
+    top: 200px; /* ajuste posição para caber na tela menor */
+  }
+  
+  #entrada-letra, #verificar-letra {
+    top: 250px; /* ajuste posição para caber na tela menor */
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #pessoa-enforcada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #estado-jogo, #tentativas-restantes, #letras-incorretas {
+    margin-bottom: 10px;
+  }
+  
+  #entrada-letra, #verificar-letra {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  #verificar-letra {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #verificar-letra:active {
+    background-color: #3e8e41;
+  }
+  
+  #entrada-letra {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+}
