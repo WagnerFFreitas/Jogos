@@ -111,12 +111,7 @@ function verificarvitoria() {
 
 // O bloco abaixo cria a função para reiniciar o jogo
 function reiniciar() {
-  tentativas = 10;
-  letrascorretas = [];
-  letrasincorretas = [];
-  document.getElementById('entrada-letra').disabled = false;
-  document.getElementById('botoes-jogo').style.display = 'none';
-  iniciarjogo();
+ location.reload();
 }
 
 // O bloco abaixo cria a função para voltar ao menu

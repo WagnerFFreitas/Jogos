@@ -25,7 +25,6 @@ h1 {
   }
 }
 
-
 /* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
 body { 
   background-image: url('fundo.jpeg');
@@ -35,8 +34,35 @@ body {
   font-style: italic;
   text-align: center;
   background-size: cover;
-  background-position: fixed;
-} 
+  background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
+}
+
+
+/* Estilos para o container dos botões */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para os botões */
+.button-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
 
 /* O bloco abaixo cria as partes do enforcado */
 #pessoa-enforcada {
@@ -137,7 +163,6 @@ body {
   height: 60px;
   border-radius: 20px;
 }
-
 
 /* O bloco abaixo adiciona o tamanho dos braços e arredonda as extremidades */
 #pessoa-enforcada .braco-esquerdo, #pessoa-enforcada .braco-direito {
@@ -343,7 +368,6 @@ body {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
-
 /* O bloco abaixo define o tamanho da fonte, cor e a sua posição */
 #entrada-letra {
   position: absolute;
@@ -380,6 +404,7 @@ body {
   h1 {
     font-size: 36px;
     margin: 10px;
+    text-align: center;
   }
   
   #pessoa-enforcada {
@@ -389,16 +414,17 @@ body {
   #estado-jogo {
     font-size: 22px;
     top: 300px;
+    left: 130px;
   }
   
   #tentativas-restantes {
     font-size: 18px;
-    top: 335px;
+    top: 365px;
   }
   
   #letras-incorretas {
     font-size: 18px;
-    top: 360px;
+    top: 390px;
   }
   
   #entrada-letra {

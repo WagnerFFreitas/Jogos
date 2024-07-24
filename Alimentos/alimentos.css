@@ -37,7 +37,6 @@ body {
   background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
 }
 
-
 /* Estilos para o container dos botões */
 .button-container {
   display: flex;

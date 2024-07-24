@@ -162,54 +162,63 @@ h1 {
 /* O bloco abaixo define o estilos para a classe alimentos */
 .alimentos {
     background: linear-gradient(-229deg, #0093E9, #80D0C7);
-    -webkit-animation-delay: -7s;
-    -moz-animation-delay: -7s;
+    -webkit-animation-delay: -9s;
+    -moz-animation-delay: -9s;
     text-align: center;
-}
-
-/* O bloco abaixo define o estilos para a classe do nome de lugares bíblicos */
-.lugaresbiblicos {
-    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
-    -webkit-animation-delay: -6s;
-    -moz-animation-delay: -6s;
-}
-
-/* O bloco abaixo define o estilos para a classe do nomes bíblicos */
-.nomebiblicos {
-    background: linear-gradient(-229deg, #50d990, #d4d054);
-    -webkit-animation-delay: -5s;
-    -moz-animation-delay: -5s;
-}
-
-/* O bloco abaixo define o estilos para a classe do nome de jogos */
-.nomejogos {
-    background: linear-gradient(-229deg, #cf91ff, #5782F5);
-    -webkit-animation-delay: -4s;
-    -moz-animation-delay: -4s;
-}
-
-/* O bloco abaixo define o estilos para a classe de nomes de carros */
-.nomecarros {
-    background: linear-gradient(-229deg, #642B73, #C6426E);
-    -webkit-animation-delay: -3s;
-    -moz-animation-delay: -3s;
-}
-
-/* O bloco abaixo define o estilos para a classe do nomes de times de futebol do mundo */
-.timefutebol {
-    background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
-    -webkit-animation-delay: -2s;
-    -moz-animation-delay: -2s;
-}
-
-/* O bloco abaixo define o estilos para a classe de nomes de pessoas */
-.nomepessoas {
-    background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
-    -webkit-animation-delay: -1s;
-    -moz-animation-delay: -1s;
 }
 
 /* O bloco abaixo define o estilos para a classe de palavras do dicionario */
 .dicionario {
     background: linear-gradient(-229deg, #1472ff, #A8EB12);
+    -webkit-animation-delay: -8s;
+    -moz-animation-delay: -8s;
+}
+
+/* O bloco abaixo define o estilos para a classe do nome de lugares bíblicos */
+.lugaresbiblicos {
+    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+    -webkit-animation-delay: -7s;
+    -moz-animation-delay: -7s;
+}
+
+/* O bloco abaixo define o estilos para a classe do nomes bíblicos */
+.nomebiblicos {
+    background: linear-gradient(-229deg, #50d990, #d4d054);
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+}
+
+/* O bloco abaixo define o estilos para a classe de nomes de carros */
+.nomecarros {
+    background: linear-gradient(-229deg, #642B73, #C6426E);
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+}
+
+/* O bloco abaixo define o estilos para a classe de nomes de desenhos animado */
+.nomedesenhos {
+    background: linear-gradient(-229deg, #642B73, #C6426E);
+    -webkit-animation-delay: -4s;
+    -moz-animation-delay: -4s;
+}
+
+/* O bloco abaixo define o estilos para a classe do nome de jogos */
+.nomejogos {
+    background: linear-gradient(-229deg, #cf91ff, #5782F5);
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+}
+
+/* O bloco abaixo define o estilos para a classe de nomes de pessoas */
+.nomepessoas {
+    background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+}
+
+/* O bloco abaixo define o estilos para a classe do nomes de times de futebol do mundo */
+.timefutebol {
+    background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
 }

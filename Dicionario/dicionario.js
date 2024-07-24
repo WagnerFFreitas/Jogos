@@ -5,7 +5,7 @@ var letrascorretas = [];
 var letrasincorretas = [];
 
 // O bloco abaixo cria a função para carregar as palavras do arquivo JSON e iniciar o jogo
-function iniciarJogo() {
+function iniciarjogo() {
   fetch('palavras.json')
     .then(response => response.json())
     .then(data => {
@@ -109,5 +109,19 @@ function verificarvitoria() {
   });
 }
 
+// O bloco abaixo cria a função para reiniciar o jogo
+function reiniciar() {
+ location.reload();
+}
+
+// O bloco abaixo cria a função para voltar ao menu
+function voltaraomenu() {
+  window.location.href = '../index.html';
+}
+
 // A linha abaixo inicia o jogo ao carregar a página
-iniciarJogo();
+iniciarjogo();
+
+// Adiciona eventos aos botões de "Reiniciar o Jogo" e "Voltar ao Menu"
+document.getElementById('reiniciar').addEventListener('click', reiniciar);
+document.getElementById('voltar-menu').addEventListener('click', voltaraomenu);
