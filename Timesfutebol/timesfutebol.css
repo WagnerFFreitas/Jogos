@@ -27,7 +27,7 @@ h1 {
 
 /* O bloco abaixo insere a imagem de fundo da pagina e define o tipo da fonte*/
 body { 
-  background-image: url('fundo.png');
+  background-image: url('fundo.jpeg');
   margin: 20px;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
@@ -36,7 +36,6 @@ body {
   background-size: cover;
   background-attachment: fixed; /* Adiciona esta linha para fixar o fundo */
 }
-
 
 /* Estilos para o container dos botões */
 .button-container {
@@ -58,6 +57,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
+}
+
+/* Adicione essa linha para afastar o botão "Reiniciar" da lateral direita */
+#reiniciar {
+  margin-right: 20px; /* ajuste o valor para o tamanho desejado */
 }
 
 .button-container button:hover {

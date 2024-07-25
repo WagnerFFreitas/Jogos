@@ -20,7 +20,7 @@ cards.forEach(card => {
         } else if (card.classList.contains('nomepessoas')) {
             url = 'Nomepessoas/nomepessoas.html';
         } else if (card.classList.contains('timefutebol')) {
-            url = 'Timefutebol/timefutebol.html';
+            url = 'Timesfutebol/timesfutebol.html';
         }
 
         if (url) {

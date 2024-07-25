@@ -60,6 +60,11 @@ body {
   font-size: 12px;
 }
 
+/* Adicione essa linha para afastar o botão "Reiniciar" da lateral direita */
+#reiniciar {
+  margin-right: 20px; /* ajuste o valor para o tamanho desejado */
+}
+
 .button-container button:hover {
   background-color: #45a049;
 }
